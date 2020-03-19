@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'YLBCommon_Example' do
+  pod 'YLBCommon', :path => '../'
+
+  target 'YLBCommon_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
