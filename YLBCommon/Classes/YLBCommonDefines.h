@@ -3,7 +3,7 @@
 //  YLBCommon
 //
 //  Created by yulibo on 2020/3/19.
-//  Copyright © 2020 ProBobo. All rights reserved.
+//  Copyright © 2020 余礼钵. All rights reserved.
 //
 
 #ifndef YLBCommonDefines_h
