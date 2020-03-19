@@ -1,0 +1,16 @@
+PODS:
+  - YLBCommon (0.1.0)
+
+DEPENDENCIES:
+  - YLBCommon (from `../`)
+
+EXTERNAL SOURCES:
+  YLBCommon:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YLBCommon: a48cfd69b69658f712752c8eb54d988aee4f388d
+
+PODFILE CHECKSUM: 0807a25932fc1a78d9ce7947867d5d6f4cc0582d
+
+COCOAPODS: 1.8.4

@@ -7,6 +7,7 @@
 //
 
 #import "YULIBOViewController.h"
+#import <YLBCommonDefines.h>
 
 @interface YULIBOViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    YLBDLog(@"statusBar = %f, navBarHeight = %d, tabbarHeigt = %d \n",YLBStatusBarHeight, YLBNavigationBarHeight, YLBTabBarHeight);
+    YLBDLog(@"ScreenSize = (%f,%f)", YLB_SCREEN_WIDTH, YLB_SCREEN_HEIGHT);
 }
 
 - (void)didReceiveMemoryWarning
