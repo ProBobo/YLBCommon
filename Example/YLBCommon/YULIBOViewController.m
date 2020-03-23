@@ -29,4 +29,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (UITableViewStyle)getUITableViewStyle {
+    return UITableViewStylePlain;
+}
 @end

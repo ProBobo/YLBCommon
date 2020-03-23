@@ -20,13 +20,18 @@
     // Do any additional setup after loading the view.
     
     //默认为 UITableViewStylePlain
-    self.tableViewStyle = [self setUITableViewStyle:UITableViewStylePlain];
+    if ([self respondsToSelector:@selector(getUITableViewStyle)]) {
+        self.tableViewStyle = [self getUITableViewStyle];
+    }
+    else {
+        self.tableViewStyle = UITableViewStylePlain;
+    }
     
     [self setupBaseSubviews];
 }
-- (UITableViewStyle)setUITableViewStyle:(UITableViewStyle)style {
-    return style;
-}
+//- (UITableViewStyle)setUITableViewStyle:(UITableViewStyle)style {
+//    return style;
+//}
 
 - (void)setupBaseSubviews {
     [self.view addSubview:self.tableView];
