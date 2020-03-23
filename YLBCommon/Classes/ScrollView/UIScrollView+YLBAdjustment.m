@@ -22,4 +22,8 @@
     }
 }
 
+- (void)stopAdjustmentWithScrollView:(UIScrollView *)scrollView controller:(UIViewController *)controller {
+    [UIScrollView stopAdjustmentWithScrollView:scrollView controller:controller];
+}
+    
 @end
