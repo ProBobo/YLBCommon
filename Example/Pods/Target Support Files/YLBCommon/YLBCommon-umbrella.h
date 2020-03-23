@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "UIScrollView+YLBAdjustment.h"
+#import "YLBCommonDefines.h"
 
 FOUNDATION_EXPORT double YLBCommonVersionNumber;
 FOUNDATION_EXPORT const unsigned char YLBCommonVersionString[];
