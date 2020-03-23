@@ -7,9 +7,10 @@
 //
 
 #import "YLBBaseTableViewController.h"
+#import "YLBCommonHeader.h"
 
 @interface YLBBaseTableViewController ()
-
+@property(nonatomic, assign) UITableViewStyle tableViewStyle;
 @end
 
 @implementation YLBBaseTableViewController
@@ -17,16 +18,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //默认为 UITableViewStylePlain
+    self.tableViewStyle = [self setUITableViewStyle:UITableViewStylePlain];
+    
+    [self setupBaseSubviews];
+}
+- (UITableViewStyle)setUITableViewStyle:(UITableViewStyle)style {
+    return style;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setupBaseSubviews {
+    [self.view addSubview:self.tableView];
+    [self.tableView stopAdjustmentWithScrollView:self.tableView controller:self];
 }
-*/
+- (UITableView *)tableView {
+    if (!_tableView) {
+        //1.创建tableView
+        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:self.tableViewStyle];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return _tableView;
+}
 
+#pragma mark - UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return nil;
+}
 @end

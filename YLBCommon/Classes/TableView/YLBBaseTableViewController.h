@@ -10,8 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YLBBaseTableViewController : UIViewController
-
+@interface YLBBaseTableViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic, strong) UITableView *tableView;
+- (UITableViewStyle)setUITableViewStyle:(UITableViewStyle)style;
+- (void)setupBaseSubviews;
 @end
 
 NS_ASSUME_NONNULL_END
