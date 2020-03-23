@@ -11,7 +11,9 @@
 #endif
 
 #import "UIScrollView+YLBAdjustment.h"
+#import "YLBBaseTableViewController.h"
 #import "YLBCommonDefines.h"
+#import "YLBCommonHeader.h"
 
 FOUNDATION_EXPORT double YLBCommonVersionNumber;
 FOUNDATION_EXPORT const unsigned char YLBCommonVersionString[];
