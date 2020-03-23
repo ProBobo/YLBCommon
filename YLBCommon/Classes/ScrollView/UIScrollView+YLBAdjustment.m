@@ -10,7 +10,7 @@
 
 @implementation UIScrollView (YLBAdjustment)
 
-+ (void)setContentInsetAdjustmentWithScrollView:(UIScrollView *)scrollView controller:(UIViewController *)controller {
++ (void)stopAdjustmentWithScrollView:(UIScrollView *)scrollView controller:(UIViewController *)controller {
 #ifdef __IPHONE_11_0
     if (@available(iOS 11.0, *)) {
         scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
