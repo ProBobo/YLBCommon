@@ -7,7 +7,7 @@
 //
 
 #import "YLBBaseTableViewController.h"
-#import "YLBCommonHeader.h"
+#import "YLBCommon.h"
 
 @interface YLBBaseTableViewController ()
 @property(nonatomic, assign) UITableViewStyle tableViewStyle;

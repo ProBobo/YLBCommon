@@ -1,15 +1,16 @@
 //
-//  YLBCommonHeader.h
+//  YLBCommon.h
 //  YLBCommon
 //
-//  Created by yulibo on 2020/3/23.
+//  Created by yulibo on 2020/3/24.
 //  Copyright © 2020 余礼钵. All rights reserved.
 //
 
-#ifndef YLBCommonHeader_h
-#define YLBCommonHeader_h
+#ifndef YLBCommon_h
+#define YLBCommon_h
 
 #import "YLBCommonDefines.h"
 #import "UIScrollView+YLBAdjustment.h"
+#import "UIView+YLBFrame.h"
 
-#endif /* YLBCommonHeader_h */
+#endif /* YLBCommon_h */
