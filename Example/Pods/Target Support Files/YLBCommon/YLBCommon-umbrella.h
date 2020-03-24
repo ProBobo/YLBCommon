@@ -12,6 +12,7 @@
 
 #import "UIScrollView+YLBAdjustment.h"
 #import "YLBBaseTableViewController.h"
+#import "UIView+YLBFrame.h"
 #import "YLBCommonDefines.h"
 #import "YLBCommonHeader.h"
 
