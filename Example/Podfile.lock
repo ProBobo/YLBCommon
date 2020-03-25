@@ -1,5 +1,5 @@
 PODS:
-  - YLBCommon (0.1.0)
+  - YLBCommon (0.2.0)
 
 DEPENDENCIES:
   - YLBCommon (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YLBCommon: a48cfd69b69658f712752c8eb54d988aee4f388d
+  YLBCommon: 8f833201a3f144e14e8d30104df677e925ba414c
 
 PODFILE CHECKSUM: 0807a25932fc1a78d9ce7947867d5d6f4cc0582d
 

@@ -11,6 +11,7 @@
 #endif
 
 #import "UIScrollView+YLBAdjustment.h"
+#import "NSString+YLBUrl.h"
 #import "YLBBaseTableViewController.h"
 #import "UIView+YLBFrame.h"
 #import "YLBCommon.h"
