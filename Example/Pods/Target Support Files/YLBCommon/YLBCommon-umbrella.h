@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIImage+YLBColor.h"
 #import "UIScrollView+YLBAdjustment.h"
 #import "NSString+YLBUrl.h"
 #import "YLBBaseTableViewController.h"
