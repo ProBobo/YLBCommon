@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) CGFloat ylb_height;
 @property(nonatomic, assign) CGPoint ylb_origin;
 @property(nonatomic, assign) CGSize ylb_size;
+- (void)ylb_becomeCenterInSuperView:(UIView *)superView;
 
 @end
 

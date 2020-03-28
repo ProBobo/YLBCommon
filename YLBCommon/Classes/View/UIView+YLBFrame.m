@@ -71,4 +71,10 @@
     return self.frame.size;
 }
 
+#pragma mark - 居中
+
+- (void)ylb_becomeCenterInSuperView:(UIView *)superView {
+    self.center = CGPointMake(superView.ylb_width/2.0, superView.ylb_height/2.0);
+}
+
 @end
