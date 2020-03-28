@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YLBBundleManager : NSObject
-+ (instancetype)sharedInstance;
+
 /**
 
  注册Pod编译后产生的Bundle路径

@@ -13,18 +13,6 @@
 @end
 
 @implementation YLBBundleManager
-+ (instancetype)sharedInstance {
-    static dispatch_once_t onceToken;
-    static YLBBundleManager *instance = nil;
-    dispatch_once(&onceToken,^{
-        instance = [[super allocWithZone:NULL] init];
-    });
-    return instance;
-}
-
-+ (id)allocWithZone:(struct _NSZone *)zone{
-    return [self sharedInstance];
-}
 
 - (NSBundle *)ylb_rigisterBundleForClass:(Class)aClass URLForResource:(NSString *)podName {
     NSURL *url = [[NSBundle bundleForClass:aClass] URLForResource:podName withExtension:@"bundle"];
