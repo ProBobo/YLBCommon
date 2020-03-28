@@ -11,6 +11,8 @@
 #endif
 
 #import "UIImage+YLBColor.h"
+#import "UIImage+YLBResource.h"
+#import "YLBBundleManager.h"
 #import "UIScrollView+YLBAdjustment.h"
 #import "NSString+YLBUrl.h"
 #import "YLBBaseTableViewController.h"
