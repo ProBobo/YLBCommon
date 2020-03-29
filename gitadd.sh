@@ -4,7 +4,7 @@ gitpush1() {
 	if [ -z "$(git status -s)" ];then
 		git push origin master
 	else
-		echo 'modified/untracked'
+		echo -e "\033[31m modified/untracked \033[0m"
 		git status
 	fi
 }
