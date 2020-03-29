@@ -2,6 +2,7 @@ msg=$1
 
 gitpush1() {
 	if [ -z "$(git status -s)" ];then
+		echo -e "\033[32m 进行push操作 \033[0m"
 		git push origin master
 	else
 		echo -e "\033[31m modified/untracked \033[0m"
