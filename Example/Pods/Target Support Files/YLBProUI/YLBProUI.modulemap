@@ -1,0 +1,6 @@
+framework module YLBProUI {
+  umbrella header "YLBProUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

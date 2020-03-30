@@ -4,7 +4,7 @@ platform :ios, '8.0'
 
 target 'YLBCommon_Example' do
   pod 'YLBCommon', :path => '../'
-
+  pod 'YLBProUI', :git => 'https://github.com/YuliboTeam/YLBProUI.git'
   target 'YLBCommon_Tests' do
     inherit! :search_paths
 

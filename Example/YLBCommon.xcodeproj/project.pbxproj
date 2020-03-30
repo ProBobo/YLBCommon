@@ -347,10 +347,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YLBCommon_Example/Pods-YLBCommon_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/YLBCommon/YLBCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/YLBProUI/YLBProUI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YLBProUI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

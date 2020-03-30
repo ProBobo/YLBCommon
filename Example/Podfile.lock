@@ -1,16 +1,27 @@
 PODS:
   - YLBCommon (1.0.0)
+  - YLBProUI (0.1.0):
+    - YLBCommon
 
 DEPENDENCIES:
   - YLBCommon (from `../`)
+  - YLBProUI (from `https://github.com/YuliboTeam/YLBProUI.git`)
 
 EXTERNAL SOURCES:
   YLBCommon:
     :path: "../"
+  YLBProUI:
+    :git: https://github.com/YuliboTeam/YLBProUI.git
+
+CHECKOUT OPTIONS:
+  YLBProUI:
+    :commit: eaa16a6eee8cadd49342d66a572da8addabed8f8
+    :git: https://github.com/YuliboTeam/YLBProUI.git
 
 SPEC CHECKSUMS:
   YLBCommon: 1da4ba715aa64444554959517eb041f3d5c5cb80
+  YLBProUI: f1c059b8d3151e8a6a5bdf0fba329d2e3e5bb020
 
-PODFILE CHECKSUM: 0807a25932fc1a78d9ce7947867d5d6f4cc0582d
+PODFILE CHECKSUM: 87442d6dadba9449883d3df821b3a95904f54ac6
 
 COCOAPODS: 1.8.4
