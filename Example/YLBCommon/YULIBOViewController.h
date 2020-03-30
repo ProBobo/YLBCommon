@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import <YLBBaseTableViewController.h>
+#import <YLBCommon/YLBBaseTableViewController.h>
 
 @interface YULIBOViewController : YLBBaseTableViewController
 

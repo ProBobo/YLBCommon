@@ -17,6 +17,7 @@
 #import "NSString+YLBUrl.h"
 #import "YLBBaseTableViewController.h"
 #import "UIView+YLBFrame.h"
+#import "YLBImaginaryLine.h"
 #import "YLBCommon.h"
 #import "YLBCommonDefines.h"
 

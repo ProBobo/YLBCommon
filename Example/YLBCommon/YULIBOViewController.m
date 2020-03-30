@@ -7,8 +7,8 @@
 //
 
 #import "YULIBOViewController.h"
-#import <YLBCommonDefines.h>
-
+#import <YLBCommon/YLBCommon.h>
+#import <YLBCommon/YLBImaginaryLine.h>
 @interface YULIBOViewController ()
 
 @end
@@ -21,6 +21,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
     YLBDLog(@"statusBar = %f, navBarHeight = %d, tabbarHeigt = %d \n",YLBStatusBarHeight, YLBNavigationBarHeight, YLBTabBarHeight);
     YLBDLog(@"ScreenSize = (%f,%f)", YLB_SCREEN_WIDTH, YLB_SCREEN_HEIGHT);
+    
+    YLBImaginaryLine *line = [[YLBImaginaryLine alloc] initWithFrame:CGRectMake(8, 0, self.view.ylb_width - 8, 8)];
+    [line ylb_becomeCenterInSuperView:self.view];
+    [self.view addSubview:line];
 }
 
 - (void)didReceiveMemoryWarning
