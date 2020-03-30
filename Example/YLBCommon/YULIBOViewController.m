@@ -27,6 +27,7 @@ static NSString * const kNormalCell = @"kNormalCell";
     
     self.tableView.ylb_y = YLBStatusBarHeight;
     self.tableView.ylb_height = self.view.ylb_height - (YLBStatusBarHeight);
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kNormalCell];
 }
 
@@ -54,6 +55,7 @@ static NSString * const kNormalCell = @"kNormalCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNormalCell];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
     return cell;
 }
