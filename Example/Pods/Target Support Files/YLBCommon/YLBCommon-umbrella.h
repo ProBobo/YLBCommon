@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "YLBTransparentController.h"
 #import "UIImage+YLBColor.h"
 #import "YLBBundleManager.h"
 #import "UIScrollView+YLBAdjustment.h"
