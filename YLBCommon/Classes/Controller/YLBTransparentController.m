@@ -27,9 +27,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.title = @"";//设置对应标题
+//    self.view.backgroundColor = UIColor.whiteColor;
+    
     NSDictionary *titleTextAttributes = @{
-                                             NSForegroundColorAttributeName : [UIColor whiteColor],
+                                             NSForegroundColorAttributeName : [UIColor whiteColor],//标题设置为白色
                                              NSFontAttributeName : [UIFont systemFontOfSize:17],
                                              };
     self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;

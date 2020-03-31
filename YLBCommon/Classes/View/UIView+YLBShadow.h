@@ -11,6 +11,19 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (YLBShadow)
+@property (nonatomic, strong) CAGradientLayer* ylb_gradientLayer;
+
+#pragma mark - 设置渐变色
+/**
+ 需要在设置frame以后调用
+ */
+- (void)ylb_Set_Gradient_Color:(NSArray *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
+#pragma mark - 添加四边阴影效果
+- (void)addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
+#pragma mark - 添加底部单边阴影效果
+- (void)addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
+// 添加底部单边阴影效果，自定义透明度
+- (void)addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor shadowOpacity:(float)shadowOpacity;
 
 @end
 

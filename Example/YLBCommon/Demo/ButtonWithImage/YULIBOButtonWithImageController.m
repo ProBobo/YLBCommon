@@ -7,6 +7,7 @@
 //
 
 #import "YULIBOButtonWithImageController.h"
+#import "YULIBOButtonWithImageView.h"
 
 @interface YULIBOButtonWithImageController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = UIColor.whiteColor;
+    [self setupSubviews];
 }
 
 /*
@@ -29,5 +31,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)setupSubviews {
+    YULIBOButtonWithImageView *currentView = [YULIBOButtonWithImageView createView];
+    currentView.ylb_y = 0;
+    currentView.ylb_height = self.view.ylb_height;
+    [self.view addSubview:currentView];
+}
 
 @end

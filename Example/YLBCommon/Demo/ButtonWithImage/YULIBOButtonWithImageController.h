@@ -7,10 +7,11 @@
 //
 
 #import "YULIBOBaseController.h"
+#import <YLBCommon/YLBTransparentController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YULIBOButtonWithImageController : YULIBOBaseController
+@interface YULIBOButtonWithImageController : YLBTransparentController
 
 @end
 
