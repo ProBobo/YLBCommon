@@ -28,12 +28,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    self.view.backgroundColor = UIColor.whiteColor;
-    
-    NSDictionary *titleTextAttributes = @{
-                                             NSForegroundColorAttributeName : [UIColor whiteColor],//标题设置为白色
-                                             NSFontAttributeName : [UIFont systemFontOfSize:17],
-                                             };
-    self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
 }
 
 /*
@@ -56,7 +50,11 @@
     //处理导航栏有条线的问题
     [self.navigationController.navigationBar setShadowImage:[UIImage new]];
 
-
+    NSDictionary *titleTextAttributes = @{
+                                             NSForegroundColorAttributeName : [UIColor whiteColor],//标题设置为白色
+                                             NSFontAttributeName : [UIFont boldSystemFontOfSize:17],
+                                             };
+    self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -64,6 +62,11 @@
     //如果不想让其他页面的导航栏变为透明，需要重置
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:nil];
+    NSDictionary *titleTextAttributes = @{
+                                             NSForegroundColorAttributeName : [UIColor blackColor],//标题设置为白色
+                                             NSFontAttributeName : [UIFont boldSystemFontOfSize:17],
+                                             };
+    self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
 }
 
 @end
