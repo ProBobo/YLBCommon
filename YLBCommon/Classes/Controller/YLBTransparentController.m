@@ -63,7 +63,7 @@
     [self.navigationController.navigationBar setBackgroundImage:nil forBarMetrics:UIBarMetricsDefault];
     [self.navigationController.navigationBar setShadowImage:nil];
     NSDictionary *titleTextAttributes = @{
-                                             NSForegroundColorAttributeName : [UIColor blackColor],//标题设置为白色
+                                             NSForegroundColorAttributeName : [UIColor blackColor],//标题设置为黑色
                                              NSFontAttributeName : [UIFont boldSystemFontOfSize:17],
                                              };
     self.navigationController.navigationBar.titleTextAttributes = titleTextAttributes;
