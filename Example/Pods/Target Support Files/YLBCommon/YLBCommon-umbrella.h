@@ -14,6 +14,7 @@
 #import "UIImage+YLBColor.h"
 #import "YLBBundleManager.h"
 #import "UIScrollView+YLBAdjustment.h"
+#import "NSString+YLBAttribute.h"
 #import "NSString+YLBUrl.h"
 #import "YLBBaseTableViewController.h"
 #import "UIView+YLBCorner.h"

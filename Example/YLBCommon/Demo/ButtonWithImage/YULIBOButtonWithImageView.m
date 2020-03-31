@@ -13,6 +13,7 @@
 
 @property(nonatomic, weak) IBOutlet UIView *topBgView;
 @property(nonatomic, weak) IBOutlet YULIBOWithImageButton* iconButton;
+@property(nonatomic, weak) IBOutlet UILabel *displayLabel;
 @end
 
 @implementation YULIBOButtonWithImageView

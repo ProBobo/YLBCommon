@@ -41,6 +41,10 @@ static NSString * const kNormalCell = @"kNormalCell";
     if (!_dataArray) {
         _dataArray = [@[
             @{
+                @"name":@"总体布局",
+                @"vc":@"YULIBOHomeController"
+            },
+            @{
                 @"name":@"虚线",
                 @"vc":@"YULIBOImaginaryLineViewController"
             },

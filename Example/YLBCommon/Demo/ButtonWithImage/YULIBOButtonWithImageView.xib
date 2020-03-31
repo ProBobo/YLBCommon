@@ -34,6 +34,13 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title="按钮" image="emotion_01"/>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-yK-mAZ">
+                            <rect key="frame" x="31" y="55" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="0.417635654080869" green="1" blue="0.98013798024674981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
@@ -57,6 +64,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="displayLabel" destination="kOT-yK-mAZ" id="cKj-dM-t93"/>
                 <outlet property="iconButton" destination="g3l-B3-A1C" id="OaP-dk-3p4"/>
                 <outlet property="topBgView" destination="45g-2j-8gL" id="r9U-Vx-tUj"/>
             </connections>
