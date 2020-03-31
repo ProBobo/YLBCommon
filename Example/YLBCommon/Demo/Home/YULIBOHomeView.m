@@ -14,7 +14,7 @@
 
 @property(nonatomic, weak) IBOutlet UIView *topBgView;
 @property(nonatomic, weak) IBOutlet UIView *secondBgView;
-@property(nonatomic, weak) IBOutlet YULIBOWithImageButton* iconButton;
+@property(nonatomic, strong) YULIBOWithImageButton* iconButton;
 @property(nonatomic, weak) IBOutlet UILabel *displayLabel;
 
 @end
@@ -41,7 +41,18 @@
     
     [self userAttributedText];
 }
-
+- (YULIBOWithImageButton *)iconButton {
+    if (!_iconButton) {
+        _iconButton = [[YULIBOWithImageButton alloc] init];
+        _iconButton.frame = CGRectMake(self.secondBgView.ylb_width - 80, 30, 80, 30);
+        [_iconButton setImage:[UIImage imageNamed:@"emotion_01"] forState:UIControlStateNormal];
+        [_iconButton setTitle:@"按钮" forState:UIControlStateNormal];
+        _iconButton.titleLabel.font = [UIFont systemFontOfSize:14];
+        _iconButton.backgroundColor = UIColor.cyanColor;
+        [self.secondBgView addSubview:_iconButton];
+    }
+    return _iconButton;
+}
 - (void)userAttributedText {
     NSDictionary *attributesPrice0 = @{NSFontAttributeName:[UIFont systemFontOfSize:21],//字号25
                                        NSForegroundColorAttributeName:[UIColor blackColor]};
