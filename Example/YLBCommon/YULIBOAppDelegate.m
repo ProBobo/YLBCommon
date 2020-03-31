@@ -7,12 +7,15 @@
 //
 
 #import "YULIBOAppDelegate.h"
+#import "YULIBOViewController.h"
 
 @implementation YULIBOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[YULIBOViewController alloc] init]];
+    self.window.rootViewController = nav;
     return YES;
 }
 

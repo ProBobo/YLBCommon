@@ -24,6 +24,9 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		90DAC6475FFA6B5F6CD23921 /* Pods_YLBCommon_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D26DA801CD42D49947AA1EB /* Pods_YLBCommon_Tests.framework */; };
+		BE91643C2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */; };
+		BE9164412432E4EC009E6A4C /* YULIBOButtonWithImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164402432E4EC009E6A4C /* YULIBOButtonWithImageController.m */; };
+		BE9164452432E57F009E6A4C /* YULIBOBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164442432E57F009E6A4C /* YULIBOBaseController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,12 @@
 		7FB145D355E61255A766BBA8 /* Pods-YLBCommon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBCommon_Tests.release.xcconfig"; path = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A81C5AC2C5CB7AA08847A5FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BE91643A2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOImaginaryLineViewController.h; sourceTree = "<group>"; };
+		BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOImaginaryLineViewController.m; sourceTree = "<group>"; };
+		BE91643F2432E4EC009E6A4C /* YULIBOButtonWithImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOButtonWithImageController.h; sourceTree = "<group>"; };
+		BE9164402432E4EC009E6A4C /* YULIBOButtonWithImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOButtonWithImageController.m; sourceTree = "<group>"; };
+		BE9164432432E57F009E6A4C /* YULIBOBaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOBaseController.h; sourceTree = "<group>"; };
+		BE9164442432E57F009E6A4C /* YULIBOBaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOBaseController.m; sourceTree = "<group>"; };
 		C848923C8E7560DFB9469A23 /* Pods-YLBCommon_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBCommon_Example.debug.xcconfig"; path = "Target Support Files/Pods-YLBCommon_Example/Pods-YLBCommon_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EE20DB2AF62DAB148D3507DE /* Pods_YLBCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLBCommon_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +152,7 @@
 		6003F593195388D20070C39A /* Example for YLBCommon */ = {
 			isa = PBXGroup;
 			children = (
+				BE9164322432DC62009E6A4C /* Demo */,
 				6003F59C195388D20070C39A /* YULIBOAppDelegate.h */,
 				6003F59D195388D20070C39A /* YULIBOAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +204,43 @@
 				7CD9FC7025BDC2CC93F7F370 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		BE9164322432DC62009E6A4C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BE9164422432E56C009E6A4C /* BaseController */,
+				BE91643E2432E498009E6A4C /* ButtonWithImage */,
+				BE9164392432DD64009E6A4C /* ImaginaryLine */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		BE9164392432DD64009E6A4C /* ImaginaryLine */ = {
+			isa = PBXGroup;
+			children = (
+				BE91643A2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.h */,
+				BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */,
+			);
+			path = ImaginaryLine;
+			sourceTree = "<group>";
+		};
+		BE91643E2432E498009E6A4C /* ButtonWithImage */ = {
+			isa = PBXGroup;
+			children = (
+				BE91643F2432E4EC009E6A4C /* YULIBOButtonWithImageController.h */,
+				BE9164402432E4EC009E6A4C /* YULIBOButtonWithImageController.m */,
+			);
+			path = ButtonWithImage;
+			sourceTree = "<group>";
+		};
+		BE9164422432E56C009E6A4C /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				BE9164432432E57F009E6A4C /* YULIBOBaseController.h */,
+				BE9164442432E57F009E6A4C /* YULIBOBaseController.m */,
+			);
+			path = BaseController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,6 +415,9 @@
 			files = (
 				6003F59E195388D20070C39A /* YULIBOAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YULIBOViewController.m in Sources */,
+				BE9164452432E57F009E6A4C /* YULIBOBaseController.m in Sources */,
+				BE91643C2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m in Sources */,
+				BE9164412432E4EC009E6A4C /* YULIBOButtonWithImageController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

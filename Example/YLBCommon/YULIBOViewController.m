@@ -8,8 +8,7 @@
 
 #import "YULIBOViewController.h"
 #import <YLBCommon/YLBCommon.h>
-#import <YLBCommon/YLBImaginaryLine.h>
-#import <YLBProUI/YLBProUI.h>
+
 @interface YULIBOViewController ()
 @property(nonatomic, strong) NSMutableArray *dataArray;
 @end
@@ -22,11 +21,12 @@ static NSString * const kNormalCell = @"kNormalCell";
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    YLBDLog(@"statusBar = %f, navBarHeight = %d, tabbarHeigt = %d \n",YLBStatusBarHeight, YLBNavigationBarHeight, YLBTabBarHeight);
-    YLBDLog(@"ScreenSize = (%f,%f)", YLB_SCREEN_WIDTH, YLB_SCREEN_HEIGHT);
     
-    self.tableView.ylb_y = YLBStatusBarHeight;
-    self.tableView.ylb_height = self.view.ylb_height - (YLBStatusBarHeight);
+    self.view.backgroundColor = UIColor.whiteColor;
+    self.navigationItem.title = @"功能列表";
+    
+    self.tableView.ylb_y = YLBStatusBarHeight + YLBNavigationBarHeight;
+    self.tableView.ylb_height = self.view.ylb_height - (YLBStatusBarHeight + YLBNavigationBarHeight);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kNormalCell];
 }
@@ -40,7 +40,14 @@ static NSString * const kNormalCell = @"kNormalCell";
 - (NSMutableArray *)dataArray {
     if (!_dataArray) {
         _dataArray = [@[
-            @"虚线"
+            @{
+                @"name":@"虚线",
+                @"vc":@"YULIBOImaginaryLineViewController"
+            },
+            @{
+                @"name":@"按钮图片布局",
+                @"vc":@"YULIBOButtonWithImageController"
+            }
         ] mutableCopy];
     }
     return _dataArray;
@@ -56,17 +63,16 @@ static NSString * const kNormalCell = @"kNormalCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kNormalCell];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.textLabel.text = [self.dataArray objectAtIndex:indexPath.row];
+    NSDictionary *dict = [self.dataArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = dict[@"name"];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *selectString = [self.dataArray objectAtIndex:indexPath.row];
-    if ([selectString isEqualToString:@"虚线"]) {
-        YLBImaginaryLine *line = [[YLBImaginaryLine alloc] initWithFrame:CGRectMake(0, 0, self.view.ylb_width, 100)];
-        [line ylb_becomeCenterInSuperView:self.view];
-        YLBAlertView *alertView = [YLBAlertView createAlertView];
-        [alertView showView:line alignment:YLBAlertViewAlignmentCenter];
-    }
+    NSDictionary *dict = [self.dataArray objectAtIndex:indexPath.row];
+    
+    UIViewController *vc = [[NSClassFromString(dict[@"vc"]) alloc] init];
+    vc.title = dict[@"name"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end
