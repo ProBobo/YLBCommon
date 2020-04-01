@@ -50,6 +50,17 @@
         _iconButton.titleLabel.font = [UIFont systemFontOfSize:14];
         _iconButton.backgroundColor = UIColor.cyanColor;
         [self.secondBgView addSubview:_iconButton];
+        
+        UIView *gradualView = [[UIView alloc] initWithFrame:CGRectMake(10, 0, 200, 150)];
+        gradualView.backgroundColor = UIColor.redColor;
+        gradualView.ylb_y = YLBStatusBarHeight + YLBNavigationBarHeight + 50;
+        
+        NSArray *colors = @[(__bridge id)UIColor.cyanColor.CGColor,
+                            (__bridge id)UIColor.lightGrayColor.CGColor
+        ];
+        [gradualView ylb_Set_Gradient_Color:colors startPoint:CGPointMake(0, 0) endPoint:CGPointMake(0, 1)];
+        [gradualView ylb_Set_View_TopLeft_ArcCenter:CGPointMake(gradualView.ylb_height, gradualView.ylb_height) radius:gradualView.ylb_height];
+        [self.secondBgView addSubview:gradualView];
     }
     return _iconButton;
 }

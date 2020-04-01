@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - 设置圆角
 - (void)ylb_Set_View_Left_Right_Corner:(CGSize)cornerRadii;
 - (void)ylb_Set_View_Corner:(CGSize)cornerRadii corners:(UIRectCorner)corners;
-
+- (void)ylb_Set_View_TopLeft_ArcCenter:(CGPoint)center radius:(CGFloat)radius;
 @end
 
 NS_ASSUME_NONNULL_END

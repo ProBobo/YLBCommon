@@ -44,4 +44,35 @@
     self.layer.mask = maskLayer;
 }
 
+- (void)ylb_Set_View_TopLeft_ArcCenter:(CGPoint)center radius:(CGFloat)radius {
+//    // 创建弧线路径对象
+//       UIBezierPath* maskPath = [UIBezierPath bezierPathWithArcCenter:center
+//                                                            radius:radius
+//                                                        startAngle:3.1415926
+//                                                          endAngle:3.1415926 *3/2
+//                                                         clockwise:YES];
+//    //创建 layer
+//    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+//    maskLayer.frame = self.bounds;
+//    //赋值
+//    maskLayer.path = maskPath.CGPath;
+//    self.layer.mask = maskLayer;
+    
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:M_PI endAngle:M_PI*3/2.0 clockwise:YES];
+    //添加一根线到圆心
+    [maskPath addLineToPoint:center];
+    //关闭路径，是从终点到起点
+    [maskPath closePath];
+    [maskPath stroke];
+    //使用填充，默认就会自动关闭路径，（终点到起点）
+    [maskPath fill];
+    
+    //创建 layer
+    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
+    maskLayer.frame = self.bounds;
+    //赋值
+    maskLayer.path = maskPath.CGPath;
+    self.layer.mask = maskLayer;
+}
+
 @end
