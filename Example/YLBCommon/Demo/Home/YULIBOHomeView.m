@@ -99,7 +99,7 @@
     testLabel.font = [UIFont systemFontOfSize:30];
     [self addSubview:testLabel];
     NSArray *testLabelColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
-    [UIView TextGradientview:testLabel bgVIew:self gradientColors:testLabelColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
+    [UIView ylbTextGradientview:testLabel bgView:self gradientColors:testLabelColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
     
     
     /*方法2*/
@@ -118,7 +118,7 @@
     _btn.titleLabel.numberOfLines=0;
     [_btn setTitle:@"button上字体渐变色设置" forState:UIControlStateNormal];
     NSArray *btnColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
-    [UIView TextGradientControl:_btn bgVIew:self gradientColors:btnColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
+    [UIView ylbTextGradientControl:_btn bgView:self gradientColors:btnColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
 }
 
 @end
