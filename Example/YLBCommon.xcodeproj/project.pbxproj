@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		90DAC6475FFA6B5F6CD23921 /* Pods_YLBCommon_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D26DA801CD42D49947AA1EB /* Pods_YLBCommon_Tests.framework */; };
+		BE304EBA243598D00060B5DC /* YULIBOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE304EB8243598D00060B5DC /* YULIBOTableViewCell.m */; };
+		BE304EBB243598D00060B5DC /* YULIBOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE304EB9243598D00060B5DC /* YULIBOTableViewCell.xib */; };
 		BE91643C2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */; };
 		BE9164412432E4EC009E6A4C /* YULIBOButtonWithImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164402432E4EC009E6A4C /* YULIBOButtonWithImageController.m */; };
 		BE9164452432E57F009E6A4C /* YULIBOBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164442432E57F009E6A4C /* YULIBOBaseController.m */; };
@@ -74,6 +76,9 @@
 		7FB145D355E61255A766BBA8 /* Pods-YLBCommon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLBCommon_Tests.release.xcconfig"; path = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A81C5AC2C5CB7AA08847A5FF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BE304EB7243598D00060B5DC /* YULIBOTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOTableViewCell.h; sourceTree = "<group>"; };
+		BE304EB8243598D00060B5DC /* YULIBOTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOTableViewCell.m; sourceTree = "<group>"; };
+		BE304EB9243598D00060B5DC /* YULIBOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YULIBOTableViewCell.xib; sourceTree = "<group>"; };
 		BE91643A2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOImaginaryLineViewController.h; sourceTree = "<group>"; };
 		BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOImaginaryLineViewController.m; sourceTree = "<group>"; };
 		BE91643F2432E4EC009E6A4C /* YULIBOButtonWithImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOButtonWithImageController.h; sourceTree = "<group>"; };
@@ -222,9 +227,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BE304EB3243595B30060B5DC /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				BE304EB7243598D00060B5DC /* YULIBOTableViewCell.h */,
+				BE304EB8243598D00060B5DC /* YULIBOTableViewCell.m */,
+				BE304EB9243598D00060B5DC /* YULIBOTableViewCell.xib */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		BE9164322432DC62009E6A4C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				BE304EB3243595B30060B5DC /* TableView */,
 				BE91645524331567009E6A4C /* Home */,
 				BE9164422432E56C009E6A4C /* BaseController */,
 				BE91643E2432E498009E6A4C /* ButtonWithImage */,
@@ -362,6 +378,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				BE91644A2432E902009E6A4C /* YULIBOButtonWithImageView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				BE304EBB243598D00060B5DC /* YULIBOTableViewCell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				BE91645A243315CE009E6A4C /* YULIBOHomeView.xib in Resources */,
 			);
@@ -459,6 +476,7 @@
 				BE9164582433157A009E6A4C /* YULIBOHomeController.m in Sources */,
 				BE9164412432E4EC009E6A4C /* YULIBOButtonWithImageController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BE304EBA243598D00060B5DC /* YULIBOTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
