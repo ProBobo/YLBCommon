@@ -9,6 +9,7 @@
 #import "YULIBOHomeView.h"
 #import "YULIBOWithImageButton.h"
 #import <YLBCommon/NSString+YLBAttribute.h>
+#import <YLBCommon/UIView+YLBColor.h>
 
 @interface YULIBOHomeView ()
 
@@ -16,6 +17,11 @@
 @property(nonatomic, weak) IBOutlet UIView *secondBgView;
 @property(nonatomic, strong) YULIBOWithImageButton* iconButton;
 @property(nonatomic, weak) IBOutlet UILabel *displayLabel;
+
+
+@property (nonatomic,strong)UILabel *label;
+ 
+@property (nonatomic,strong)UIButton *btn;
 
 @end
 
@@ -40,6 +46,7 @@
     [self.iconButton ylb_Set_View_Corner:CGSizeMake(self.iconButton.ylb_height/2.0, self.iconButton.ylb_height/2.0) corners:(UIRectCornerTopLeft | UIRectCornerBottomLeft)];
     
     [self userAttributedText];
+    [self testColor];
 }
 - (YULIBOWithImageButton *)iconButton {
     if (!_iconButton) {
@@ -80,6 +87,38 @@
     CGRect rect = [attributedString boundingRectWithSize:CGSizeMake(self.ylb_width / 2, 100) options:NSStringDrawingUsesLineFragmentOrigin context:nil];//此方法获取到的是自适应的Rect，而不是CGSize，最大Size值为CGSizeMake(self.width / 2, 100)
     rect = CGRectMake(0, 0, 100, 50);
     price.ylb_size = CGSizeMake(rect.size.width, rect.size.height);
+}
+
+- (void)testColor {
+    
+    CGFloat topSpace = CGRectGetMaxY(self.secondBgView.frame);
+    /*方法1*/
+    
+    UILabel* testLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, topSpace + 20, 400, 50)];
+    testLabel.text = @"label上渐变方法1";
+    testLabel.font = [UIFont systemFontOfSize:30];
+    [self addSubview:testLabel];
+    NSArray *testLabelColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
+    [UIView TextGradientview:testLabel bgVIew:self gradientColors:testLabelColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
+    
+    
+    /*方法2*/
+    _label=[[UILabel alloc]initWithFrame:CGRectMake(10, topSpace + 20 + 50 + 20, self.frame.size.width-20,50)];
+    [self addSubview:_label];
+    _label.text=@"label上渐变方法2";
+    _label.textAlignment=NSTextAlignmentCenter;
+    _label.font = [UIFont systemFontOfSize:30];
+    _label.textColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"navigationbar_background"]];
+    
+    
+    /*方法3*/
+    _btn=[[UIButton alloc]initWithFrame:CGRectMake(10, topSpace + 20 + 50 + 20 + 50 + 20, self.frame.size.width-20, 50)];
+    [self addSubview:_btn];
+    _btn.titleLabel.font=[UIFont systemFontOfSize:30];
+    _btn.titleLabel.numberOfLines=0;
+    [_btn setTitle:@"button上字体渐变色设置" forState:UIControlStateNormal];
+    NSArray *btnColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
+    [UIView TextGradientControl:_btn bgVIew:self gradientColors:btnColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
 }
 
 @end

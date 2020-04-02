@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 extern NSString * const kYULIBOTableViewCell;
 
 @interface YULIBOTableViewCell : UITableViewCell
-+ (instancetype)getWithTableView:(UITableView *)tableView;
+//+ (instancetype)getWithTableView:(UITableView *)tableView;
 @end
 
 NS_ASSUME_NONNULL_END

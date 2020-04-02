@@ -18,6 +18,7 @@
 #import "NSString+YLBSize.h"
 #import "NSString+YLBUrl.h"
 #import "YLBBaseTableViewController.h"
+#import "UIView+YLBColor.h"
 #import "UIView+YLBCorner.h"
 #import "UIView+YLBFrame.h"
 #import "UIView+YLBShadow.h"

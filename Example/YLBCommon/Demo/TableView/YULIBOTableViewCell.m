@@ -16,13 +16,13 @@ NSString * const kYULIBOTableViewCell = @"YULIBOTableViewCell";
 
 @implementation YULIBOTableViewCell
 
-+ (instancetype)getWithTableView:(UITableView *)tableView {
-    id cell = [tableView dequeueReusableCellWithIdentifier:kYULIBOTableViewCell];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
-    }
-    return cell;
-}
+//+ (instancetype)getWithTableView:(UITableView *)tableView {
+//    id cell = [tableView dequeueReusableCellWithIdentifier:kYULIBOTableViewCell];
+//    if (!cell) {
+//        cell = [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] lastObject];
+//    }
+//    return cell;
+//}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
