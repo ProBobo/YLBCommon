@@ -10,7 +10,7 @@
 #import "YULIBOWithImageButton.h"
 #import <YLBCommon/NSString+YLBAttribute.h>
 #import <YLBCommon/UIView+YLBColor.h>
-#import "YULIBOColorLabel.h"
+#import <YLBCommon/UIView+YLBCreateImage.h>
 
 @interface YULIBOHomeView ()
 
@@ -92,18 +92,18 @@
 - (void)testColor {
     
     CGFloat topSpace = CGRectGetMaxY(self.secondBgView.frame);
-    /*方法1*/
-    
-//    UIView *firstBgView = [[UILabel alloc] initWithFrame:CGRectMake(10, topSpace + 20, self.frame.size.width-20, 50)];
-//    [self addSubview:firstBgView];
+    /*方法1：最佳方案，不会产生bug*/
     UILabel* testLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, topSpace + 20, self.frame.size.width-20, 50)];
 //    testLabel.frame = firstBgView.bounds;
-//    testLabel.textAlignment=NSTextAlignmentCenter;
+    testLabel.textAlignment=NSTextAlignmentCenter;
     testLabel.text = @"label上渐变方法1";
     testLabel.font = [UIFont systemFontOfSize:30];
     [self addSubview:testLabel];
-    NSArray *testLabelColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
-    [UIView ylbTextGradientview:testLabel bgView:self gradientColors:testLabelColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
+    
+    //2.合成图片
+    UIImage *bgImage = [self getGradientColorImageWithView:testLabel];
+    //3.设置文字渐变色
+    testLabel.textColor = [UIColor colorWithPatternImage:bgImage];
     
     
     /*方法2*/
@@ -116,7 +116,7 @@
     
     
     /*方法3*/
-    _btn=[[UIButton alloc]initWithFrame:CGRectMake(10, topSpace + 20 + 50 + 20 + 50 + 20, self.frame.size.width-20, 50)];
+    _btn=[[UIButton alloc]initWithFrame:CGRectMake(10, topSpace + 20 + (50 + 20)*2, self.frame.size.width-20, 50)];
     [self addSubview:_btn];
     _btn.titleLabel.font=[UIFont systemFontOfSize:30];
     _btn.titleLabel.numberOfLines=0;
@@ -125,64 +125,39 @@
     [UIView ylbTextGradientControl:_btn bgView:self gradientColors:btnColors gradientStartPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
     
     
-//    UILabel *label = [[UILabel alloc] initWithFrame:self.bounds];
-//    label.textAlignment = NSTextAlignmentCenter;
-//    label.frame = self.bounds;
-//    label.backgroundColor = [UIColor clearColor];
-//    label.font = [UIFont systemFontOfSize:20];
-//    label.numberOfLines = 0;
-//    label.text = @"炫彩字体 炫彩字体 炫彩字体 炫彩字体 炫彩字体 炫彩字体";
-//    [self addSubview:label];
-//
-//    CAGradientLayer *layer = [[CAGradientLayer alloc] init];
-//    layer.colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor blueColor].CGColor];
-//    layer.startPoint = CGPointZero;
-//    layer.endPoint = CGPointMake(1, 1);
-//    layer.frame = label.bounds;
-//    layer.mask = label.layer; //把文字作为渐变图层的遮罩
-//    [self.layer addSublayer:layer];
-    
-//    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-//    gradientLayer.colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
-//    //gradientLayer.locations = @[@0, @0.5, @1];// 默认就是均匀分布
-//    gradientLayer.startPoint = CGPointMake(0, 0.5);
-//    gradientLayer.endPoint = CGPointMake(1, 0.5);
-//    gradientLayer.frame = _label2.frame;
-//    gradientLayer.mask = _label2.layer;
-//    _label2.layer.frame = gradientLayer.bounds;
-//    [self.view.layer addSublayer:gradientLayer];
-    
     UILabel *_lable = [[UILabel alloc] init];
-
-    //    _lable.frame = CGRectMake(100, 200, 300, 20);
-
-    _lable.text = @"这样写可能会更好理解一点";
-
-        [self addSubview:_lable];
-
+    _lable.text = @"这样写更好理解";
+    [self addSubview:_lable];
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
-
     gradientLayer.colors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blueColor].CGColor];
-
     //gradientLayer.locations = @[@0, @0.5, @1];// 默认就是均匀分布
-
-    gradientLayer.startPoint = CGPointMake(0.5, 0);
-
-    gradientLayer.endPoint = CGPointMake(0.5, 1);
-
-    gradientLayer.frame = CGRectMake(100, 200, 300, 20);
-
+    gradientLayer.startPoint = CGPointMake(0, 0);
+    gradientLayer.endPoint = CGPointMake(0, 1);
+    gradientLayer.frame = CGRectMake(10, topSpace + 20 + (50 + 20)*3, self.frame.size.width-20, 50);
     _lable.frame = gradientLayer.bounds;//设置_lable的坐标
-
     //    _lable.layer.frame = gradientLayer.bounds;//和上面的代码一个效果
-
     gradientLayer.mask = _lable.layer;//可以理解为([gradientLayer addSubview:_lable])
-
     [self.layer addSublayer:gradientLayer];
     
-    YULIBOColorLabel *colorLabel = [[YULIBOColorLabel alloc] initWithFrame:CGRectMake(10, 300, 100, 50)];
-    colorLabel.text = @"123进";
+    
+    UILabel *colorLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, topSpace + 20 + (50 + 20)*4, self.frame.size.width-20, 50)];
+    colorLabel.textAlignment = NSTextAlignmentCenter;
+    colorLabel.text = @"123进123进123进123进123进123进123进";
     [self addSubview:colorLabel];
+    
+    //2.合成图片
+    UIImage *bgImage2 = [self getGradientColorImageWithView:colorLabel];
+    //3.设置文字渐变色
+    colorLabel.textColor = [UIColor colorWithPatternImage:bgImage2];
+}
+- (UIImage *)getGradientColorImageWithView:(UIView *)view {
+    //1.生成渐变色背景图片
+    UIView *labelBgView = [[UIView alloc] initWithFrame:view.bounds];
+    NSArray *testLabelColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blackColor].CGColor];
+    [labelBgView ylb_Set_Gradient_Color:testLabelColors startPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
+    //2.合成图片
+    UIImage *bgImage = [UIView imageWithView:labelBgView];
+    return bgImage;
 }
 
 @end

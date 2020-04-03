@@ -21,6 +21,7 @@
 #import "YLBBaseTableViewController.h"
 #import "UIView+YLBColor.h"
 #import "UIView+YLBCorner.h"
+#import "UIView+YLBCreateImage.h"
 #import "UIView+YLBFrame.h"
 #import "UIView+YLBShadow.h"
 #import "YLBImaginaryLine.h"

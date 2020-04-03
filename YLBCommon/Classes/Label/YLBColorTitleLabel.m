@@ -26,7 +26,13 @@
     }
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSaveGState(context); //保存上下文环境
-    NSDictionary *attributes = @{NSFontAttributeName:self.font, NSForegroundColorAttributeName:self.textColor};
+//     NSMutableParagraphStyle *paragraphStyle = NSMutableParagraphStyle.new;
+//    paragraphStyle.alignment                = self.textAlignment;//NSTextAlignmentCenter;
+
+    NSDictionary *attributes = @{NSFontAttributeName:self.font, NSForegroundColorAttributeName:self.textColor
+//                                 , NSParagraphStyleAttributeName:paragraphStyle
+                                 
+    };
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:self.text attributes:attributes];
     CGFloat width = CGRectGetWidth(rect);
     CGFloat height = CGRectGetHeight(rect);
