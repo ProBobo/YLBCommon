@@ -12,6 +12,7 @@
 
 #import "YLBTransparentController.h"
 #import "UIImage+YLBColor.h"
+#import "YLBColorTitleLabel.h"
 #import "YLBBundleManager.h"
 #import "UIScrollView+YLBAdjustment.h"
 #import "NSString+YLBAttribute.h"

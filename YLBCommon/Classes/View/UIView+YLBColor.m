@@ -37,7 +37,7 @@
     gradientLayer1.endPoint = endPoint;
     [bgView.layer addSublayer:gradientLayer1];
     gradientLayer1.mask = control.layer;
-    control.frame = gradientLayer1.bounds;
+    control.layer.frame = gradientLayer1.bounds;
 }
 
 @end
