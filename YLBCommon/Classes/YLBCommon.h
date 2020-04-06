@@ -15,4 +15,7 @@
 #import "UIView+YLBCorner.h"
 #import "UIView+YLBShadow.h"
 
+#import "NSString+YLBAttribute.h"
+#import "NSString+YLBSize.h"
+
 #endif /* YLBCommon_h */

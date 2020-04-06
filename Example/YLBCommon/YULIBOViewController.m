@@ -23,8 +23,8 @@ static NSString * const kNormalCell = @"kNormalCell";
 	// Do any additional setup after loading the view, typically from a nib.
     
     self.view.backgroundColor = UIColor.whiteColor;
-    self.title = @"功能列表";
-    
+//    self.title = @"功能列表";
+    self.navigationItem.title = @"功能列表";
     self.tableView.ylb_y = YLBStatusBarHeight + YLBNavigationBarHeight;
     self.tableView.ylb_height = self.view.ylb_height - (YLBStatusBarHeight + YLBNavigationBarHeight);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

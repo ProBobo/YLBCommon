@@ -79,14 +79,22 @@
     NSDictionary *attributesPrice2 = @{NSFontAttributeName:[UIFont systemFontOfSize:15],//字号15
                                        NSForegroundColorAttributeName:[UIColor blackColor]};
     
-    NSAttributedString *attributedString = [NSString attributedText:@[@"¥", @"2021", @" ≈ ¥12.49"]
-                                                 attributeAttay:@[attributesPrice0, attributesPrice1, attributesPrice2]];
+    NSAttributedString *attributedString = [NSString ylb_attributedStringWithStringArray:@[@"¥", @"2021", @" ≈ ¥12.49"]
+                                                 attributeArray:@[attributesPrice0, attributesPrice1, attributesPrice2]];
     UILabel *price = self.displayLabel;
-    price.adjustsFontSizeToFitWidth = YES;
+//    price.adjustsFontSizeToFitWidth = YES;
     price.attributedText = attributedString;
     CGRect rect = [attributedString boundingRectWithSize:CGSizeMake(self.ylb_width / 2, 100) options:NSStringDrawingUsesLineFragmentOrigin context:nil];//此方法获取到的是自适应的Rect，而不是CGSize，最大Size值为CGSizeMake(self.width / 2, 100)
-    rect = CGRectMake(0, 0, 100, 50);
+//    rect = CGRectMake(0, 0, 100, 50);
     price.ylb_size = CGSizeMake(rect.size.width, rect.size.height);
+    
+    UILabel *testSizeLabel = [[UILabel alloc] init];
+    testSizeLabel.font = [UIFont systemFontOfSize:12];
+    NSString *text = @"测试字符串宽高";
+    CGSize firstSize = [text ylb_stringSize:testSizeLabel.font];
+    CGSize secondSize = [text ylb_sizeWithSringFont:testSizeLabel.font];
+    YLBDLog(@"firstSize = %@",NSStringFromCGSize(firstSize));
+    YLBDLog(@"secondSize = %@",NSStringFromCGSize(secondSize));
 }
 
 - (void)testColor {
@@ -126,6 +134,7 @@
     
     
     UILabel *_lable = [[UILabel alloc] init];
+    _lable.textAlignment = NSTextAlignmentCenter;
     _lable.text = @"这样写更好理解";
     [self addSubview:_lable];
     CAGradientLayer *gradientLayer = [CAGradientLayer layer];
