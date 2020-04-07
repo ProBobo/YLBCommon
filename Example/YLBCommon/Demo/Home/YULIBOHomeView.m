@@ -72,12 +72,13 @@
     return _iconButton;
 }
 - (void)userAttributedText {
+    UIImage *bgColorImg = [self getGradientColorImageWithView:self.displayLabel];
     NSDictionary *attributesPrice0 = @{NSFontAttributeName:[UIFont systemFontOfSize:21],//字号25
                                        NSForegroundColorAttributeName:[UIColor blackColor]};
     NSDictionary *attributesPrice1 = @{NSFontAttributeName:[UIFont systemFontOfSize:28],//字号28
                                        NSForegroundColorAttributeName:[UIColor blackColor]};
     NSDictionary *attributesPrice2 = @{NSFontAttributeName:[UIFont systemFontOfSize:15],//字号15
-                                       NSForegroundColorAttributeName:[UIColor blackColor]};
+                                       NSForegroundColorAttributeName:[UIColor colorWithPatternImage:bgColorImg]};
     
     NSAttributedString *attributedString = [NSString ylb_attributedStringWithStringArray:@[@"¥", @"2021", @" ≈ ¥12.49"]
                                                  attributeArray:@[attributesPrice0, attributesPrice1, attributesPrice2]];
@@ -158,14 +159,41 @@
     UIImage *bgImage2 = [self getGradientColorImageWithView:colorLabel];
     //3.设置文字渐变色
     colorLabel.textColor = [UIColor colorWithPatternImage:bgImage2];
+    
+    [self setupIntroduceLabel];
+}
+- (void)setupIntroduceLabel {
+    CGFloat topSpace = CGRectGetMaxY(self.secondBgView.frame);
+    UILabel *introduceLabel = [[UILabel alloc] init];
+    introduceLabel.frame = CGRectMake(10, topSpace + 20 + (50 + 20)*5, 140, 32);
+    introduceLabel.numberOfLines = 3;
+    NSString *introduceString1 = @"numberOfLines为3的Label，\n显示：";
+    NSString *introduceString2 = @"300000数值";
+    
+    UIImage *bgColorImg = [self getGradientColorImageWithView:introduceLabel];
+    NSDictionary *attributesPrice0 = @{NSFontAttributeName:[UIFont systemFontOfSize:10],//字号10
+                                       NSForegroundColorAttributeName:[UIColor blackColor]};
+    NSDictionary *attributesPrice1 = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:15],//字号15
+                                       NSForegroundColorAttributeName:[UIColor colorWithPatternImage:bgColorImg]};
+    
+    NSAttributedString *attributedString = [NSString ylb_attributedStringWithStringArray:@[introduceString1, introduceString2] attributeArray:@[attributesPrice0, attributesPrice1]];
+    introduceLabel.attributedText = attributedString;
+    
+    CGRect rect = [attributedString boundingRectWithSize:CGSizeMake(140, 50) options:NSStringDrawingUsesLineFragmentOrigin context:nil];//此方法获取到的是自适应的Rect，而不是CGSize，最大Size值为CGSizeMake
+    introduceLabel.ylb_size = CGSizeMake(rect.size.width, rect.size.height);
+    
+    [self addSubview:introduceLabel];
+    
 }
 - (UIImage *)getGradientColorImageWithView:(UIView *)view {
-    //1.生成渐变色背景图片
-    UIView *labelBgView = [[UIView alloc] initWithFrame:view.bounds];
-    NSArray *testLabelColors = @[(id)[UIColor redColor].CGColor, (id)[UIColor greenColor].CGColor, (id)[UIColor blackColor].CGColor];
-    [labelBgView ylb_Set_Gradient_Color:testLabelColors startPoint:CGPointMake(0, 1) endPoint:CGPointMake(1, 1)];
-    //2.合成图片
-    UIImage *bgImage = [UIView imageWithView:labelBgView];
+    UIImage *bgImage;
+    NSArray *testLabelColors = @[(id)YLBHexColor(0x00FFD5).CGColor, (id)YLBHexColor(0x2FBFFD).CGColor];
+    CGPoint startPoint = CGPointMake(0, 0);
+    CGPoint endPoint = CGPointMake(1, 1);
+    bgImage = [UIView createGradientColorImageWithBounds:view.bounds
+                                                  colors:testLabelColors
+                                              startPoint:startPoint
+                                                endPoint:endPoint];
     return bgImage;
 }
 

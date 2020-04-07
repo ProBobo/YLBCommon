@@ -7,6 +7,8 @@
 //
 
 #import "UIView+YLBCreateImage.h"
+#import "UIView+YLBShadow.h"
+#import "YLBCommonDefines.h"
 
 @implementation UIView (YLBCreateImage)
 
@@ -21,6 +23,18 @@
     UIImage * img = UIGraphicsGetImageFromCurrentImageContext();//*图像从当前图像上下文获取图像
     UIGraphicsEndImageContext();//结束图像上下文
     return img;
+}
+
++ (UIImage *)createGradientColorImageWithBounds:(CGRect)bounds
+                                         colors:(NSArray *)colors
+                                     startPoint:(CGPoint)startPoint
+                                       endPoint:(CGPoint)endPoint {
+    //1.生成渐变色背景图片
+    UIView *colorView = [[UIView alloc] initWithFrame:bounds];
+    [colorView ylb_Set_Gradient_Color:colors startPoint:startPoint endPoint:endPoint];
+    //2.合成图片
+    UIImage *bgImage = [UIView imageWithView:colorView];
+    return bgImage;
 }
 
 @end

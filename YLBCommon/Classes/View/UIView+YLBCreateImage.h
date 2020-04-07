@@ -16,6 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
  将View上的控件合成image
  */
 + (UIImage *)imageWithView:(UIView *)view;
+/**
+ 生成渐变色图片
+*/
++ (UIImage *)createGradientColorImageWithBounds:(CGRect)bounds
+                                         colors:(NSArray *)colors
+                                     startPoint:(CGPoint)startPoint
+                                       endPoint:(CGPoint)endPoint;
 
 @end
 
