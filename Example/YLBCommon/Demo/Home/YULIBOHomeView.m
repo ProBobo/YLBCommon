@@ -135,6 +135,7 @@
     
     
     UILabel *_lable = [[UILabel alloc] init];
+    _label.ylb_maxY = 9;
     _lable.textAlignment = NSTextAlignmentCenter;
     _lable.text = @"这样写更好理解";
     [self addSubview:_lable];
