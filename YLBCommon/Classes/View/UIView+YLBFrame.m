@@ -71,30 +71,18 @@
     return self.frame.size;
 }
 #pragma mark - leftSpace
-- (void)setYlb_leftSpace:(CGFloat)ylb_leftSpace {
-    self.ylb_leftSpace = ylb_leftSpace;
-}
 - (CGFloat)ylb_leftSpace {
     return self.ylb_leftSpace;
 }
 #pragma mark - topSpace
-- (void)setYlb_topSpace:(CGFloat)ylb_topSpace {
-    self.ylb_topSpace = ylb_topSpace;
-}
 - (CGFloat)ylb_topSpace {
     return self.ylb_topSpace;
 }
 #pragma mark - rightSpace
-- (void)setYlb_rightSpace:(CGFloat)ylb_rightSpace {
-    self.ylb_rightSpace = ylb_rightSpace;
-}
 - (CGFloat)ylb_rightSpace {
     return self.ylb_rightSpace;
 }
 #pragma mark - bottomSpace
-- (void)setYlb_bottomSpace:(CGFloat)ylb_bottomSpace {
-    self.ylb_bottomSpace = ylb_bottomSpace;
-}
 - (CGFloat)ylb_bottomSpace {
     return self.ylb_bottomSpace;
 }
