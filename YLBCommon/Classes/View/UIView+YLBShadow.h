@@ -19,11 +19,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)ylb_Set_Gradient_Color:(NSArray *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
 #pragma mark - 添加四边阴影效果
-- (void)ylb_addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
++ (void)ylb_addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
 #pragma mark - 添加底部单边阴影效果
-- (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
++ (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
 // 添加底部单边阴影效果，自定义透明度
-- (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor shadowOpacity:(float)shadowOpacity;
++ (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor shadowOpacity:(float)shadowOpacity;
 
 @end
 

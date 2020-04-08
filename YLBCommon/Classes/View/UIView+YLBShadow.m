@@ -48,7 +48,7 @@ static char ylbGradientLayerKey;
 }
 
 // 添加四边阴影效果
-- (void)ylb_addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor {
++ (void)ylb_addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor {
     // 阴影颜色
     originalView.layer.shadowColor = originalColor.CGColor;
     // 阴影偏移，默认(0, -3)
@@ -60,7 +60,7 @@ static char ylbGradientLayerKey;
     
 }
 // 添加底部单边阴影效果
-- (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor {
++ (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor {
     originalView.layer.shadowColor = originalColor.CGColor;
     originalView.layer.shadowOffset = CGSizeMake(0,0);
     originalView.layer.shadowOpacity = 0.5;
@@ -73,7 +73,7 @@ static char ylbGradientLayerKey;
 }
 
 // 添加底部单边阴影效果，自定义透明度
-- (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor shadowOpacity:(float)shadowOpacity {
++ (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor shadowOpacity:(float)shadowOpacity {
     originalView.layer.shadowColor = originalColor.CGColor;
     originalView.layer.shadowOffset = CGSizeMake(0,0);
     originalView.layer.shadowOpacity = shadowOpacity;
