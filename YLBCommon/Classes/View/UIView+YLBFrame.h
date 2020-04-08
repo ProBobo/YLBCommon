@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) CGFloat ylb_rightSpace;
 @property(nonatomic, assign) CGFloat ylb_bottomSpace;
 
+@property(nonatomic, assign) CGFloat ylb_maxX;
+@property(nonatomic, assign) CGFloat ylb_maxY;
+
 - (void)ylb_becomeCenterInSuperView:(UIView *)superView;
 
 @end

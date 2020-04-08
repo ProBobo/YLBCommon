@@ -98,6 +98,14 @@
 - (CGFloat)ylb_bottomSpace {
     return self.ylb_bottomSpace;
 }
+#pragma mark - maxX
+- (CGFloat)ylb_maxX {
+    return CGRectGetMaxX(self.frame);
+}
+#pragma mark - maxY
+- (CGFloat)ylb_maxY {
+    return CGRectGetMaxY(self.frame);
+}
 #pragma mark - 居中
 
 - (void)ylb_becomeCenterInSuperView:(UIView *)superView {
