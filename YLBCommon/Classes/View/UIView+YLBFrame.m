@@ -70,22 +70,6 @@
 - (CGSize)ylb_size {
     return self.frame.size;
 }
-#pragma mark - leftSpace
-- (CGFloat)ylb_leftSpace {
-    return self.ylb_leftSpace;
-}
-#pragma mark - topSpace
-- (CGFloat)ylb_topSpace {
-    return self.ylb_topSpace;
-}
-#pragma mark - rightSpace
-- (CGFloat)ylb_rightSpace {
-    return self.ylb_rightSpace;
-}
-#pragma mark - bottomSpace
-- (CGFloat)ylb_bottomSpace {
-    return self.ylb_bottomSpace;
-}
 #pragma mark - maxX
 - (CGFloat)ylb_maxX {
     return CGRectGetMaxX(self.frame);
