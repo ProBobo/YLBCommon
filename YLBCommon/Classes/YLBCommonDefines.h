@@ -44,6 +44,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #define YLBDLog(...)
 #endif
 
+//防止字符串为nil
+#define YLB_PROTECT_STR(x) (x == nil ? @"" : x)
+
 #pragma mark - iPhone屏幕宽高
 // 屏幕宽度
 #define YLB_SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
