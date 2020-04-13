@@ -66,6 +66,24 @@ static char ylb_bottomSpace_key;
 - (CGPoint)ylb_origin {
     return self.frame.origin;
 }
+#pragma mark - centerX
+- (void)setYlb_centerX:(CGFloat)ylb_centerX {
+    CGPoint center = self.center;
+    center.x = ylb_centerX;
+    self.center = center;
+}
+- (CGFloat)ylb_centerX {
+    return self.center.x;
+}
+#pragma mark - centerY
+- (void)setYlb_centerY:(CGFloat)ylb_centerY {
+    CGPoint center = self.center;
+    center.y = ylb_centerY;
+    self.center = center;
+}
+- (CGFloat)ylb_centerY {
+    return self.center.y;
+}
 #pragma mark - size
 - (void)setYlb_size:(CGSize)ylb_size {
     CGRect frame = self.frame;
