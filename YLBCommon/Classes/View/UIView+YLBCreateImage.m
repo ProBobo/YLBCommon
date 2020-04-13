@@ -37,4 +37,15 @@
     return bgImage;
 }
 
++ (UIImage *)createGradientColorImageWithView:(UIView *)view
+                                       colors:(NSArray *)colors
+                                   startPoint:(CGPoint)startPoint
+                                     endPoint:(CGPoint)endPoint {
+    //1.生成渐变色背景图片
+    UIView *colorView = [[UIView alloc] initWithFrame:view.bounds];
+    [colorView ylb_Set_Gradient_Color:colors startPoint:startPoint endPoint:endPoint];
+    //2.合成图片
+    UIImage *bgImage = [UIView imageWithView:colorView];
+    return bgImage;
+}
 @end

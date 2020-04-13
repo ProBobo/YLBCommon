@@ -17,12 +17,19 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)imageWithView:(UIView *)view;
 /**
- 生成渐变色图片
+ 生成渐变色图片：通过坐标生成
 */
 + (UIImage *)createGradientColorImageWithBounds:(CGRect)bounds
                                          colors:(NSArray *)colors
                                      startPoint:(CGPoint)startPoint
                                        endPoint:(CGPoint)endPoint;
+/**
+ 生成渐变色图片：通过UIView生成
+*/
++ (UIImage *)createGradientColorImageWithView:(UIView *)view
+                                       colors:(NSArray *)colors
+                                   startPoint:(CGPoint)startPoint
+                                     endPoint:(CGPoint)endPoint;
 
 @end
 
