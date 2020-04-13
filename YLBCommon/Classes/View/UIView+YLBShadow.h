@@ -18,12 +18,26 @@ NS_ASSUME_NONNULL_BEGIN
  需要在设置frame以后调用
  */
 - (void)ylb_Set_Gradient_Color:(NSArray *)colors startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
-#pragma mark - 添加四边阴影效果
+/**
+ 添加四边阴影效果
+ */
 + (void)ylb_addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
-#pragma mark - 添加底部单边阴影效果
+/**
+ 添加底部单边阴影效果
+ */
 + (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor;
-// 添加底部单边阴影效果，自定义透明度
+/**
+ 添加底部单边阴影效果，自定义透明度
+ */
 + (void)ylb_addOneLineShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor shadowOpacity:(float)shadowOpacity;
+/**
+ 自定义阴影效果
+ */
++ (void)ylb_addCustomShadowToViewWithOriginalView:(UIView *)originalView
+                                     cornerRadius:(CGFloat)cornerRadius
+                                      shadowColor:(UIColor *)shadowColor
+                                     shadowOffset:(CGSize)shadowOffset
+                                    shadowOpacity:(float)shadowOpacity;
 
 @end
 

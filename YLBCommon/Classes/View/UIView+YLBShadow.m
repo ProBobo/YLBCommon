@@ -51,11 +51,11 @@ static char ylbGradientLayerKey;
 + (void)ylb_addShadowToViewWithCornerRadius:(CGFloat)cornerRadius originalView:(UIView *)originalView withColor:(UIColor *)originalColor {
     // 阴影颜色
     originalView.layer.shadowColor = originalColor.CGColor;
-    // 阴影偏移，默认(0, -3)
+    // 阴影偏移，
     originalView.layer.shadowOffset = CGSizeMake(0,0);
-    // 阴影透明度，默认0
+    // 阴影透明度
     originalView.layer.shadowOpacity = 0.5;
-    // 阴影半径，默认3
+    // 阴影半径
     originalView.layer.shadowRadius = cornerRadius;
     
 }
@@ -83,6 +83,23 @@ static char ylbGradientLayerKey;
     CGRect shadowRect = CGRectMake(0, CGRectGetHeight(originalView.frame)-shadowPathWidth/2.0, originalView.bounds.size.width, shadowPathWidth);
     UIBezierPath *path = [UIBezierPath bezierPathWithRect:shadowRect];
     originalView.layer.shadowPath = path.CGPath;
+}
+
+// 自定义阴影效果
++ (void)ylb_addCustomShadowToViewWithOriginalView:(UIView *)originalView
+                                     cornerRadius:(CGFloat)cornerRadius
+                                      shadowColor:(UIColor *)shadowColor
+                                     shadowOffset:(CGSize)shadowOffset
+                                    shadowOpacity:(float)shadowOpacity {
+    // 阴影半径
+    originalView.layer.shadowRadius = cornerRadius;
+    // 阴影颜色
+    originalView.layer.shadowColor = shadowColor.CGColor;
+    // 阴影偏移
+    originalView.layer.shadowOffset = shadowOffset;
+    // 阴影透明度
+    originalView.layer.shadowOpacity = shadowOpacity;
+    
 }
 
 @end
