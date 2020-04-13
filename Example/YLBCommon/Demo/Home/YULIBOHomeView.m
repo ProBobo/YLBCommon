@@ -188,11 +188,11 @@
 }
 - (UIImage *)getGradientColorImageWithView:(UIView *)view {
     UIImage *bgImage;
-    NSArray *testLabelColors = @[(id)YLBHexColor(0x00FFD5).CGColor, (id)YLBHexColor(0x2FBFFD).CGColor];
+    NSArray *colors = @[(id)YLBHexColor(0x00FFD5).CGColor, (id)YLBHexColor(0x2FBFFD).CGColor];
     CGPoint startPoint = CGPointMake(0, 0);
     CGPoint endPoint = CGPointMake(1, 1);
     bgImage = [UIView createGradientColorImageWithBounds:view.bounds
-                                                  colors:testLabelColors
+                                                  colors:colors
                                               startPoint:startPoint
                                                 endPoint:endPoint];
     return bgImage;
