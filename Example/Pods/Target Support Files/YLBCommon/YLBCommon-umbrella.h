@@ -11,6 +11,7 @@
 #endif
 
 #import "YLBTransparentController.h"
+#import "YLBWhiteController.h"
 #import "UIImage+YLBColor.h"
 #import "YLBColorTitleLabel.h"
 #import "YLBBundleManager.h"
