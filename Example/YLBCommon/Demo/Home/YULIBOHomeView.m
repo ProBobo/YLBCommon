@@ -185,6 +185,10 @@
     
     [self addSubview:introduceLabel];
     
+    introduceLabel.layer.cornerRadius = 8;
+    introduceLabel.backgroundColor = UIColor.whiteColor;
+    [UIView ylb_addCustomShadowToViewWithOriginalView:introduceLabel cornerRadius:8 shadowColor:UIColor.lightGrayColor shadowOffset:CGSizeMake(0, 5) shadowOpacity:0.5];
+    
 }
 - (UIImage *)getGradientColorImageWithView:(UIView *)view {
     UIImage *bgImage;
