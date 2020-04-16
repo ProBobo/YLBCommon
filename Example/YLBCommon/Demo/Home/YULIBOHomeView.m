@@ -166,7 +166,7 @@
 - (void)setupIntroduceLabel {
     CGFloat topSpace = CGRectGetMaxY(self.secondBgView.frame);
     UILabel *introduceLabel = [[UILabel alloc] init];
-    introduceLabel.frame = CGRectMake(10, topSpace + 20 + (50 + 20)*5, 140, 32);
+    introduceLabel.frame = CGRectMake(10, topSpace + 20 + (50 + 20)*5, 200, 32);
     introduceLabel.numberOfLines = 3;
     NSString *introduceString1 = @"numberOfLines为3的Label，\n显示：";
     NSString *introduceString2 = @"300000数值";
