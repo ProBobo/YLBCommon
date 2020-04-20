@@ -17,5 +17,6 @@
 
 #import "NSString+YLBAttribute.h"
 #import "NSString+YLBSize.h"
+#import "UIColor+YLBColor.h"
 
 #endif /* YLBCommon_h */
