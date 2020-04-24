@@ -46,6 +46,7 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 
 //防止字符串为nil
 #define YLB_PROTECT_STR(x) (x == nil ? @"" : x)
+#define YLB_CHANG_TO_STR(x) [NSString stringWithFormat:@"%@",x]
 
 #pragma mark - iPhone屏幕宽高
 // 屏幕宽度
