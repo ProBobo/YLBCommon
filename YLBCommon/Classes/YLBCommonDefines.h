@@ -28,6 +28,9 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 
 #endif
 
+#pragma mark - 判断系统版本
+#define YLBDeviceVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
 #pragma mark - 导航栏高度
 
 // 状态栏高度
