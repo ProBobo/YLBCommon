@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.view.backgroundColor = UIColor.whiteColor;
     //默认为 UITableViewStylePlain
     if ([self respondsToSelector:@selector(getUITableViewStyle)]) {
         self.tableViewStyle = [self getUITableViewStyle];
