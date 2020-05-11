@@ -13,6 +13,7 @@ static char ylb_leftSpace_key;
 static char ylb_topSpace_key;
 static char ylb_rightSpace_key;
 static char ylb_bottomSpace_key;
+static char ylb_maxWidth_key;
 
 @implementation UIView (YLBFrame)
 
@@ -39,6 +40,9 @@ static char ylb_bottomSpace_key;
 #pragma mark - width
 - (void)setYlb_width:(CGFloat)ylb_width {
     CGRect frame = self.frame;
+    if (self.ylb_maxWidth > 0) {
+        ylb_width = self.ylb_maxWidth;
+    }
     frame.size.width = ylb_width;
     self.frame = frame;
 }
@@ -135,6 +139,13 @@ static char ylb_bottomSpace_key;
 }
 - (CGFloat)ylb_maxY {
     return CGRectGetMaxY(self.frame);
+}
+#pragma mark - maxWidth
+- (void)setYlb_maxWidth:(CGFloat)ylb_maxWidth {
+    objc_setAssociatedObject(self, &ylb_maxWidth_key, @(ylb_maxWidth), OBJC_ASSOCIATION_ASSIGN);
+}
+- (CGFloat)ylb_maxWidth {
+    return [objc_getAssociatedObject(self, &ylb_maxWidth_key) floatValue];
 }
 #pragma mark - 居中
 

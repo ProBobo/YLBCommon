@@ -30,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, assign) CGFloat ylb_maxX;
 @property(nonatomic, assign) CGFloat ylb_maxY;
+/**
+ 目前的设计：ylb_maxWidth必须大于0，0表示关闭ylb_maxWidth设置
+ */
+@property(nonatomic, assign) CGFloat ylb_maxWidth;
 
 - (void)ylb_becomeCenterInSuperView:(UIView *)superView;
 
