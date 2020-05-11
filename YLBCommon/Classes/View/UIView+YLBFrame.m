@@ -40,7 +40,7 @@ static char ylb_maxWidth_key;
 #pragma mark - width
 - (void)setYlb_width:(CGFloat)ylb_width {
     CGRect frame = self.frame;
-    if (self.ylb_maxWidth > 0) {
+    if (self.ylb_maxWidth > 0 && ylb_width > self.ylb_maxWidth) {
         ylb_width = self.ylb_maxWidth;
     }
     frame.size.width = ylb_width;
