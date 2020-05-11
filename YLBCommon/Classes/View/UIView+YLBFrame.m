@@ -100,28 +100,28 @@ static char ylb_maxWidth_key;
 }
 #pragma mark - leftSpace
 - (void)setYlb_leftSpace:(CGFloat)ylb_leftSpace {
-    objc_setAssociatedObject(self, &ylb_leftSpace_key, @(ylb_leftSpace), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &ylb_leftSpace_key, @(ylb_leftSpace), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (CGFloat)ylb_leftSpace {
     return [objc_getAssociatedObject(self, &ylb_leftSpace_key) floatValue];
 }
 #pragma mark - topSpace
 - (void)setYlb_topSpace:(CGFloat)ylb_topSpace {
-    objc_setAssociatedObject(self, &ylb_topSpace_key, @(ylb_topSpace), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &ylb_topSpace_key, @(ylb_topSpace), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (CGFloat)ylb_topSpace {
     return [objc_getAssociatedObject(self, &ylb_topSpace_key) floatValue];
 }
 #pragma mark - rightSpace
 - (void)setYlb_rightSpace:(CGFloat)ylb_rightSpace {
-    objc_setAssociatedObject(self, &ylb_rightSpace_key, @(ylb_rightSpace), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &ylb_rightSpace_key, @(ylb_rightSpace), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (CGFloat)ylb_rightSpace {
     return [objc_getAssociatedObject(self, &ylb_rightSpace_key) floatValue];
 }
 #pragma mark - bottomSpace
 - (void)setYlb_bottomSpace:(CGFloat)ylb_bottomSpace {
-    objc_setAssociatedObject(self, &ylb_bottomSpace_key, @(ylb_bottomSpace), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &ylb_bottomSpace_key, @(ylb_bottomSpace), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (CGFloat)ylb_bottomSpace {
     return [objc_getAssociatedObject(self, &ylb_bottomSpace_key) floatValue];
@@ -142,7 +142,7 @@ static char ylb_maxWidth_key;
 }
 #pragma mark - maxWidth
 - (void)setYlb_maxWidth:(CGFloat)ylb_maxWidth {
-    objc_setAssociatedObject(self, &ylb_maxWidth_key, @(ylb_maxWidth), OBJC_ASSOCIATION_ASSIGN);
+    objc_setAssociatedObject(self, &ylb_maxWidth_key, @(ylb_maxWidth), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (CGFloat)ylb_maxWidth {
     return [objc_getAssociatedObject(self, &ylb_maxWidth_key) floatValue];
