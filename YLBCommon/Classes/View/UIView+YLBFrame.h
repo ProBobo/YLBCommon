@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, assign) CGFloat ylb_maxX;
 @property(nonatomic, assign) CGFloat ylb_maxY;
 /**
- 目前的设计：ylb_maxWidth必须大于0，0表示关闭ylb_maxWidth设置
+ 目前的设计：1、ylb_maxWidth必须大于0，0表示关闭ylb_maxWidth设置；2、调用ylb_width才可以启用ylb_maxWidth
  */
 @property(nonatomic, assign) CGFloat ylb_maxWidth;
 
