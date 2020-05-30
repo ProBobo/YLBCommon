@@ -51,6 +51,10 @@ static NSString * const kNormalCell = @"kNormalCell";
             @{
                 @"name":@"按钮图片布局",
                 @"vc":@"YULIBOButtonWithImageController"
+            },
+            @{
+                @"name":@"分享",
+                @"vc":@"YULIBOShareController"
             }
         ] mutableCopy];
     }

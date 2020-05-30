@@ -27,6 +27,7 @@
 		BE304EBA243598D00060B5DC /* YULIBOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE304EB8243598D00060B5DC /* YULIBOTableViewCell.m */; };
 		BE304EBB243598D00060B5DC /* YULIBOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE304EB9243598D00060B5DC /* YULIBOTableViewCell.xib */; };
 		BE304ED12436CE5C0060B5DC /* YULIBOColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE304ED02436CE5C0060B5DC /* YULIBOColorLabel.m */; };
+		BE5C1EE22481F07600E99665 /* YULIBOShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5C1EE12481F07600E99665 /* YULIBOShareController.m */; };
 		BE91643C2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */; };
 		BE9164412432E4EC009E6A4C /* YULIBOButtonWithImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164402432E4EC009E6A4C /* YULIBOButtonWithImageController.m */; };
 		BE9164452432E57F009E6A4C /* YULIBOBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164442432E57F009E6A4C /* YULIBOBaseController.m */; };
@@ -82,6 +83,8 @@
 		BE304EB9243598D00060B5DC /* YULIBOTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YULIBOTableViewCell.xib; sourceTree = "<group>"; };
 		BE304ECF2436CE5C0060B5DC /* YULIBOColorLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOColorLabel.h; sourceTree = "<group>"; };
 		BE304ED02436CE5C0060B5DC /* YULIBOColorLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOColorLabel.m; sourceTree = "<group>"; };
+		BE5C1EE02481F07600E99665 /* YULIBOShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOShareController.h; sourceTree = "<group>"; };
+		BE5C1EE12481F07600E99665 /* YULIBOShareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOShareController.m; sourceTree = "<group>"; };
 		BE91643A2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOImaginaryLineViewController.h; sourceTree = "<group>"; };
 		BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOImaginaryLineViewController.m; sourceTree = "<group>"; };
 		BE91643F2432E4EC009E6A4C /* YULIBOButtonWithImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOButtonWithImageController.h; sourceTree = "<group>"; };
@@ -240,9 +243,19 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		BE5C1EDF2481F06300E99665 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				BE5C1EE02481F07600E99665 /* YULIBOShareController.h */,
+				BE5C1EE12481F07600E99665 /* YULIBOShareController.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 		BE9164322432DC62009E6A4C /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				BE5C1EDF2481F06300E99665 /* Share */,
 				BE304EB3243595B30060B5DC /* TableView */,
 				BE91645524331567009E6A4C /* Home */,
 				BE9164422432E56C009E6A4C /* BaseController */,
@@ -349,6 +362,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "余礼钵";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M6Z7C5C7K3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -476,6 +492,7 @@
 				6003F5A7195388D20070C39A /* YULIBOViewController.m in Sources */,
 				BE9164482432E8F6009E6A4C /* YULIBOButtonWithImageView.m in Sources */,
 				BE304ED12436CE5C0060B5DC /* YULIBOColorLabel.m in Sources */,
+				BE5C1EE22481F07600E99665 /* YULIBOShareController.m in Sources */,
 				BE9164452432E57F009E6A4C /* YULIBOBaseController.m in Sources */,
 				BE91645D243315E5009E6A4C /* YULIBOHomeView.m in Sources */,
 				BE91643C2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m in Sources */,
@@ -610,6 +627,7 @@
 			baseConfigurationReference = C848923C8E7560DFB9469A23 /* Pods-YLBCommon_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M6Z7C5C7K3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YLBCommon/YLBCommon-Prefix.pch";
 				INFOPLIST_FILE = "YLBCommon/YLBCommon-Info.plist";
@@ -626,6 +644,7 @@
 			baseConfigurationReference = 0EAA966CC14C8704E5E2DCE7 /* Pods-YLBCommon_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M6Z7C5C7K3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YLBCommon/YLBCommon-Prefix.pch";
 				INFOPLIST_FILE = "YLBCommon/YLBCommon-Info.plist";
