@@ -24,9 +24,10 @@
 
 - (void)setupSubviews {
     UIButton *shareFromSystemButton = [[UIButton alloc] init];
-    shareFromSystemButton.frame = CGRectMake(0, YLBStatusBarHeight + YLBNavigationBarHeight + 20, 100, 30);
+    shareFromSystemButton.frame = CGRectMake(0, YLBStatusBarHeight + YLBNavigationBarHeight + 20, 200, 50);
     shareFromSystemButton.ylb_centerX = self.view.ylb_width / 2.0;
     [shareFromSystemButton setTitle:@"系统方法：分享微信" forState:UIControlStateNormal];
+    shareFromSystemButton.titleLabel.adjustsFontSizeToFitWidth = YES;
     shareFromSystemButton.backgroundColor = UIColor.cyanColor;
     [self.view addSubview:shareFromSystemButton];
     
@@ -41,7 +42,7 @@
 - (void)shareToWX {
     UIImage *imageToShare = [UIImage imageNamed:@"emotion_01"];
     UIImage *imageToShare1 = [UIImage imageNamed:@"navigationbar_background"];
-//    imageToShare = [UIImage getJPEGImagerImg:imageToShare];
+    imageToShare = [UIImage getJPEGImagerImg:imageToShare];
     imageToShare1 = [UIImage getJPEGImagerImg:imageToShare1];
     NSArray *activityItems = @[imageToShare, imageToShare1];
     UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
