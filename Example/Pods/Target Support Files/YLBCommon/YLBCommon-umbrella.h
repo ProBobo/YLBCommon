@@ -21,6 +21,7 @@
 #import "NSString+YLBAttribute.h"
 #import "NSString+YLBSize.h"
 #import "NSString+YLBUrl.h"
+#import "NSString+YLBVersion.h"
 #import "YLBBaseTableViewController.h"
 #import "UIView+YLBColor.h"
 #import "UIView+YLBCorner.h"

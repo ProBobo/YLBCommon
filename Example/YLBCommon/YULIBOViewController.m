@@ -83,4 +83,5 @@ static NSString * const kNormalCell = @"kNormalCell";
     vc.title = dict[@"name"];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 @end
