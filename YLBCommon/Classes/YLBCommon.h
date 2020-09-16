@@ -19,4 +19,6 @@
 #import "NSString+YLBSize.h"
 #import "UIColor+YLBColor.h"
 
+#import "YLBFrequeControl.h"
+
 #endif /* YLBCommon_h */

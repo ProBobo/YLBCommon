@@ -1,8 +1,9 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YLBCommon" "${PODS_CONFIGURATION_BUILD_DIR}/YLBProUI"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YLBCommon" "${PODS_CONFIGURATION_BUILD_DIR}/YLBProUI" "${PODS_ROOT}/UMCCommon" "${PODS_ROOT}/UMCShare/UMShare"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YLBCommon/YLBCommon.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLBProUI/YLBProUI.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/YLBCommon/YLBCommon.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/YLBProUI/YLBProUI.framework/Headers" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/UMCShare"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "YLBCommon" -framework "YLBProUI"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat" "${PODS_ROOT}/UMCShare/UMShare/SocialLibraries/WeChat/WechatSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SocialOfficialWeChat" -l"SocialWeChat" -l"WeChatSDK" -l"c++" -l"sqlite3" -l"z" -framework "CoreGraphics" -framework "CoreTelephony" -framework "SystemConfiguration" -framework "UMCommon" -framework "UMShare" -framework "WebKit" -framework "YLBCommon" -framework "YLBProUI"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

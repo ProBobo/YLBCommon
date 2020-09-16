@@ -35,6 +35,16 @@
 }
 
 - (void)shareFromSystemButtonMethod:(id)sender {
+    NSURL * url = [NSURL URLWithString:@"weixin://"];
+    BOOL canOpen = [[UIApplication sharedApplication] canOpenURL:url];
+    //先判断是否能打开该url
+    if (canOpen)
+    {   //打开微信
+        [[UIApplication sharedApplication] openURL:url];
+    }else {
+        //        [MBProgressHUD showFailWithMessage:@"您的设备未安装微信" toView:SXDelegateWindow];
+    }
+    
     [self shareToWX];
 }
 

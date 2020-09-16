@@ -13,6 +13,7 @@
 #import "UIColor+YLBColor.h"
 #import "YLBTransparentController.h"
 #import "YLBWhiteController.h"
+#import "YLBFrequeControl.h"
 #import "UIImage+YLBColor.h"
 #import "UIImage+YLBSystemShareToWX.h"
 #import "YLBColorTitleLabel.h"

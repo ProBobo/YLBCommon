@@ -1,11 +1,28 @@
 PODS:
+  - UMCCommon (7.1.1)
+  - UMCShare/Core (6.9.10):
+    - UMCCommon
+  - UMCShare/Social/ReducedWeChat (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+  - UMCShare/Social/WeChat (6.9.10):
+    - UMCCommon
+    - UMCShare/Core
+    - UMCShare/Social/ReducedWeChat
   - YLBCommon (1.0.0)
   - YLBProUI (0.1.0):
     - YLBCommon
 
 DEPENDENCIES:
+  - UMCCommon
+  - UMCShare/Social/WeChat
   - YLBCommon (from `../`)
   - YLBProUI (from `https://github.com/YuliboTeam/YLBProUI.git`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - UMCCommon
+    - UMCShare
 
 EXTERNAL SOURCES:
   YLBCommon:
@@ -19,9 +36,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/YuliboTeam/YLBProUI.git
 
 SPEC CHECKSUMS:
+  UMCCommon: f455f92c125342e360d6ad9eafe484945351eeb5
+  UMCShare: a4a95fbdd61ecce5b6751d8c9ed9b519e80fcbc9
   YLBCommon: 1da4ba715aa64444554959517eb041f3d5c5cb80
   YLBProUI: f1c059b8d3151e8a6a5bdf0fba329d2e3e5bb020
 
-PODFILE CHECKSUM: 87442d6dadba9449883d3df821b3a95904f54ac6
+PODFILE CHECKSUM: b9da312d6dad0a8c28bc86976fc680e99dec8268
 
 COCOAPODS: 1.9.1

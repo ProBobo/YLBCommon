@@ -1,6 +1,16 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## UMCCommon
+
+Copyright 2011 - 2019 umeng.com. All rights reserved.
+
+
+## UMCShare
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
 ## YLBCommon
 
 Copyright (c) 2020 ProBobo <564885081@qq.com>
