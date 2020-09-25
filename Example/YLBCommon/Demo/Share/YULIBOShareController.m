@@ -35,7 +35,8 @@
 }
 
 - (void)shareFromSystemButtonMethod:(id)sender {
-    NSURL * url = [NSURL URLWithString:@"weixin://"];
+    NSString *urlStr = @"weixin://";
+    NSURL * url = [NSURL URLWithString:urlStr];
     BOOL canOpen = [[UIApplication sharedApplication] canOpenURL:url];
     //先判断是否能打开该url
     if (canOpen)
@@ -43,9 +44,18 @@
         [[UIApplication sharedApplication] openURL:url];
     }else {
         //        [MBProgressHUD showFailWithMessage:@"您的设备未安装微信" toView:SXDelegateWindow];
+        urlStr = @"https://help.wechat.com/app/";
+        url = [NSURL URLWithString:urlStr];
+        canOpen = [[UIApplication sharedApplication] canOpenURL:url];
+        if (canOpen) {
+            [[UIApplication sharedApplication] openURL:url];
+        }
+        else {
+            [[UIApplication sharedApplication] openURL:url];
+            YLBDLog(@"请打开微信");
+        }
     }
-    
-    [self shareToWX];
+//    [self shareToWX];
 }
 
 #pragma mark - 系统方法：微信分享
