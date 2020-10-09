@@ -8,7 +8,7 @@
 
 #import "YULIBOHomeController.h"
 #import "YULIBOHomeView.h"
-
+#import <YLBCommon/YLBCommon.h>
 @interface YULIBOHomeController ()
 
 @end
@@ -37,6 +37,20 @@
     currentView.ylb_y = 0;
     currentView.ylb_height = self.view.ylb_height;
     [self.view addSubview:currentView];
+    
+    /*
+     //iOS核心动画内存泄漏CAKeyframeAnimation解决方案:
+     1、引入代理
+     YLBAnimationWeakDelegate
+     
+     2、创建对应实例
+     CAKeyframeAnimation *moveAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
+     YLBAnimationDelegateManager * manager = [YLBAnimationDelegateManager new]; //创建实例
+     manager.delegate = self; //进行弱引用
+     moveAnimation.delegate = manager; //进行强引用
+     
+     */
+    
 }
 
 @end

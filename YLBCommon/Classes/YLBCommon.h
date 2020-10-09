@@ -21,4 +21,6 @@
 
 #import "YLBFrequeControl.h"
 
+#import "YLBAnimationDelegateManager.h"
+
 #endif /* YLBCommon_h */
