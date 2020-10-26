@@ -32,9 +32,28 @@
     [self.view addSubview:shareFromSystemButton];
     
     [shareFromSystemButton addTarget:self action:@selector(shareFromSystemButtonMethod:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self setupButton];
+}
+
+- (void)setupButton {
+    UIButton *shareFromSystemButton = [[UIButton alloc] init];
+    shareFromSystemButton.frame = CGRectMake(0, YLBStatusBarHeight + YLBNavigationBarHeight + 20 + 100, 200, 50);
+    shareFromSystemButton.ylb_centerX = self.view.ylb_width / 2.0;
+    [shareFromSystemButton setTitle:@"跳转微信" forState:UIControlStateNormal];
+    shareFromSystemButton.titleLabel.adjustsFontSizeToFitWidth = YES;
+    shareFromSystemButton.backgroundColor = UIColor.cyanColor;
+    [self.view addSubview:shareFromSystemButton];
+    
+    [shareFromSystemButton addTarget:self action:@selector(skipToWX:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)shareFromSystemButtonMethod:(id)sender {
+
+    [self shareToWX];
+}
+
+- (void)skipToWX:(id)sender {
     NSString *urlStr = @"weixin://";
     NSURL * url = [NSURL URLWithString:urlStr];
     BOOL canOpen = [[UIApplication sharedApplication] canOpenURL:url];
@@ -55,7 +74,6 @@
             YLBDLog(@"请打开微信");
         }
     }
-//    [self shareToWX];
 }
 
 #pragma mark - 系统方法：微信分享
