@@ -19,6 +19,7 @@
 #import "UIImage+YLBSystemShareToWX.h"
 #import "YLBColorTitleLabel.h"
 #import "YLBBundleManager.h"
+#import "NSNumber+Formatter.h"
 #import "UIScrollView+YLBAdjustment.h"
 #import "NSString+YLBAttribute.h"
 #import "NSString+YLBSize.h"

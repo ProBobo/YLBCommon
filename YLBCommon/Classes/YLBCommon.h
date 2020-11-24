@@ -23,4 +23,6 @@
 
 #import "YLBAnimationDelegateManager.h"
 
+#import "NSNumber+Formatter.h"
+
 #endif /* YLBCommon_h */

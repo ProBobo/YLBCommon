@@ -28,6 +28,7 @@
 		BE304EBB243598D00060B5DC /* YULIBOTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE304EB9243598D00060B5DC /* YULIBOTableViewCell.xib */; };
 		BE304ED12436CE5C0060B5DC /* YULIBOColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE304ED02436CE5C0060B5DC /* YULIBOColorLabel.m */; };
 		BE5C1EE22481F07600E99665 /* YULIBOShareController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5C1EE12481F07600E99665 /* YULIBOShareController.m */; };
+		BE8672D72564D0DE003BD1B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8672D62564D0DE003BD1B3 /* ViewController.m */; };
 		BE91643C2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */; };
 		BE9164412432E4EC009E6A4C /* YULIBOButtonWithImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164402432E4EC009E6A4C /* YULIBOButtonWithImageController.m */; };
 		BE9164452432E57F009E6A4C /* YULIBOBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9164442432E57F009E6A4C /* YULIBOBaseController.m */; };
@@ -85,6 +86,8 @@
 		BE304ED02436CE5C0060B5DC /* YULIBOColorLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOColorLabel.m; sourceTree = "<group>"; };
 		BE5C1EE02481F07600E99665 /* YULIBOShareController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOShareController.h; sourceTree = "<group>"; };
 		BE5C1EE12481F07600E99665 /* YULIBOShareController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOShareController.m; sourceTree = "<group>"; };
+		BE8672D52564D0DE003BD1B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BE8672D62564D0DE003BD1B3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BE91643A2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOImaginaryLineViewController.h; sourceTree = "<group>"; };
 		BE91643B2432DDB0009E6A4C /* YULIBOImaginaryLineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YULIBOImaginaryLineViewController.m; sourceTree = "<group>"; };
 		BE91643F2432E4EC009E6A4C /* YULIBOButtonWithImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YULIBOButtonWithImageController.h; sourceTree = "<group>"; };
@@ -261,6 +264,8 @@
 				BE9164422432E56C009E6A4C /* BaseController */,
 				BE91643E2432E498009E6A4C /* ButtonWithImage */,
 				BE9164392432DD64009E6A4C /* ImaginaryLine */,
+				BE8672D52564D0DE003BD1B3 /* ViewController.h */,
+				BE8672D62564D0DE003BD1B3 /* ViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -487,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8672D72564D0DE003BD1B3 /* ViewController.m in Sources */,
 				6003F59E195388D20070C39A /* YULIBOAppDelegate.m in Sources */,
 				BE91644D2432F204009E6A4C /* YULIBOWithImageButton.m in Sources */,
 				6003F5A7195388D20070C39A /* YULIBOViewController.m in Sources */,

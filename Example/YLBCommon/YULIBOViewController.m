@@ -29,6 +29,8 @@ static NSString * const kNormalCell = @"kNormalCell";
     self.tableView.ylb_height = self.view.ylb_height - (YLBStatusBarHeight + YLBNavigationBarHeight);
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:kNormalCell];
+    
+    YLBDLog(@"NSJSONWritingOptions = %d, %d, %d, %d",NSJSONWritingPrettyPrinted,NSJSONWritingSortedKeys,NSJSONWritingFragmentsAllowed,NSJSONWritingWithoutEscapingSlashes);
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,6 +57,10 @@ static NSString * const kNormalCell = @"kNormalCell";
             @{
                 @"name":@"分享",
                 @"vc":@"YULIBOShareController"
+            },
+            @{
+                @"name":@"网络请求",
+                @"vc":@"ViewController"
             }
         ] mutableCopy];
     }
