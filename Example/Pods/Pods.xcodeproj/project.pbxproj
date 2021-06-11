@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		08797F46251C64100F721EEF64AAD344 /* UMCShare */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = A669382222024943D23AC81401BE4737 /* Build configuration list for PBXAggregateTarget "UMCShare" */;
+			buildConfigurationList = DEAC373AC5CBC11625940454AF9693DA /* Build configuration list for PBXAggregateTarget "UMCShare" */;
 			buildPhases = (
 			);
 			dependencies = (
-				DD5941773CD99F0A6AF95F1F5334F71F /* PBXTargetDependency */,
+				90CB281AF3089EA88ACD0AA56EDA7951 /* PBXTargetDependency */,
 			);
 			name = UMCShare;
 		};
@@ -29,129 +29,129 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		09953642BE92109EA9E5F18B8E06178D /* YLBAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3367741D19FAF93A36B356E9F25FD227 /* YLBAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		057CA6494266694FE6D61637C1A940BF /* Pods-YLBCommon_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548C047EE0E2F46A72BDA67B4AD5FB7 /* Pods-YLBCommon_Example-dummy.m */; };
 		0BB87E2F107A0FE32C3A839F8559A9C7 /* YLBColorTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B64EEFA0BF79EEBF4F2BB0D722DD9116 /* YLBColorTitleLabel.m */; };
+		11B8F8A51A7C4A065C83FB7E5497E906 /* YLBLabelImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BCA179B22660CD3B41624D202FDC9 /* YLBLabelImageButton.m */; };
 		140AA0C6645670EAFE35EFB610DA9CFD /* YLBAnimationDelegateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D2681EB47BCA59611DE24FE83EE424C5 /* YLBAnimationDelegateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14281CAFDCC9F84F9F843DFA670F631B /* YLBBaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 319073FBF88425986696D718B2105FE9 /* YLBBaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		188814B212D458FA8459AF72166A294B /* UIScrollView+YLBAdjustment.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DB5B5AC907A286939763A2E73CE970 /* UIScrollView+YLBAdjustment.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E7477C7A9DC45315BA8D9F7D2D5B11A /* Pods-YLBCommon_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548C047EE0E2F46A72BDA67B4AD5FB7 /* Pods-YLBCommon_Example-dummy.m */; };
-		263A8038090AE8050D54313F6A0EB9C0 /* YLBDottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BDE889567A5EEB0BD3258A2BFE6FAF /* YLBDottedLine.m */; };
+		1BE7DA3C878DFCCC5384A5FEB9AB0DA4 /* Pods-YLBCommon_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BAAC1B23E8E11093116A0791288D576 /* Pods-YLBCommon_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		28FC119D64E36B8ABA6C770F66708078 /* UIView+YLBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9F0E85CC2F6B0CAC18E429203FB83A /* UIView+YLBColor.m */; };
-		298EA11259FE370E70B6BF494F8D4EA5 /* YLBProUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A645069AA23AF234ABD1D45044835D /* YLBProUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2966A51D2F884B598E8B2C3F7F84CE83 /* YLBAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3367741D19FAF93A36B356E9F25FD227 /* YLBAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		299DDCAC2B0A239C4D5F14582D7CEC35 /* UIScrollView+YLBAdjustment.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D092D8D1C97283D96D325D0ED9C588 /* UIScrollView+YLBAdjustment.m */; };
-		2DDFE820FA338A7C05AA59C603AC3544 /* YLBProUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F03ECB137D63FD11C3D2FCCC8948A8 /* YLBProUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		302349D999FF8B1EFA4DA6AA3E94EFC9 /* YLBCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57013C322ADBCD08FD4CCC49D2D2F34F /* YLBCommon.framework */; };
+		2AA53A43787ABA490E34476578C7AB26 /* Pods-YLBCommon_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A471BB5A4D72E22ED36C8C6782273 /* Pods-YLBCommon_Tests-dummy.m */; };
 		30EBEADD9F4CC1E348DE2C1052E940F8 /* YLBBaseTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 539B49F8AA3D91DF3E1E65F1F147877C /* YLBBaseTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		324BC169EE3770C227CE2DF02D153831 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22BB58D72A2549AAA366D77C5BEB8DB /* Foundation.framework */; };
 		34B9DEA253086C18155A5569A752B1F5 /* NSString+YLBAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D0E4C4AFECFD1037E024BE493CF65B1 /* NSString+YLBAttribute.m */; };
 		3572738F2BF34FBDD76A30A559C8A5BC /* UIView+YLBFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B5294F9E5BF42C2AEB3DD5BAFAC9609 /* UIView+YLBFrame.m */; };
 		37D74B5A9F1C47BA1BB9C1EE01FB79D8 /* NSString+YLBSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DA6F6A121E0DE428B10253F651859 /* NSString+YLBSize.m */; };
+		3D80C1FF870419727E2987D45D93ECB9 /* YLBLabelImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3243CB47D3065462A19F9FDE796083CF /* YLBLabelImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3ED942ED0DA74EE954EE79D497CC9882 /* UIView+YLBCorner.h in Headers */ = {isa = PBXBuildFile; fileRef = D59257C8711D73ECC398D6F0076AFA6E /* UIView+YLBCorner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4325B1440CD864B046583E8C120BA08C /* YLBProUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D4C6358C1214F4B1A7D9F1EFC0CC58 /* YLBProUI-dummy.m */; };
-		47C23C83E40093411271359A306130BE /* Pods-YLBCommon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36F0F51DE37D8B1DCC97A8D3297FE9 /* Pods-YLBCommon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		496EA638E4D2AF5C4B3900EBD30B5FFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE448C61CCF629D2B16794BB54760DB4 /* Foundation.framework */; };
-		4ADADD29B3A144D1240BD91F7DDBDCEF /* Pods-YLBCommon_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BAAC1B23E8E11093116A0791288D576 /* Pods-YLBCommon_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41BF293353142837DC3AEC586E3E4A29 /* YLBBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8FE04A3AAEB01EE871117B317593C /* YLBBaseButton.m */; };
 		4DB13DCB905AB0C00086857CDB62EFD9 /* YLBCommonDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9FAAC28F184E90539CC7F22DBD3394 /* YLBCommonDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E1F5A308D3A6D295040A56CE092A9B2 /* NSString+YLBUrl.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF3239A852D31B03DAD5B256DB0C46D /* NSString+YLBUrl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5150B55BE4826EE9847E67FDCED1E54F /* YLBDottedLine.h in Headers */ = {isa = PBXBuildFile; fileRef = E6942CC1AEC1E0623B7FCC7506CF4826 /* YLBDottedLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		58C7B395AAEE414DAD88AC08C27F09FB /* YLBBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF8FE04A3AAEB01EE871117B317593C /* YLBBaseButton.m */; };
+		4F4A80241D2E4BAA5FDFCC0F7DEF5359 /* YLBImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8AFE6389D2B73CFF246BFD9683D1C9 /* YLBImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52FDD2B15FFA38DB01070F037F7161B5 /* YLBCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57013C322ADBCD08FD4CCC49D2D2F34F /* YLBCommon.framework */; };
 		5ADABD713C3BEA3DF5E2579661A37D63 /* YLBFrequeControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 758A46A91B908BB1D85963851ECA71D1 /* YLBFrequeControl.m */; };
-		6081F82C072E0712C90B4882458094A2 /* YLBLabelImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E2BCA179B22660CD3B41624D202FDC9 /* YLBLabelImageButton.m */; };
+		5D54036877EC4AD9FC7911367C46B0DB /* YLBDottedLine.h in Headers */ = {isa = PBXBuildFile; fileRef = E6942CC1AEC1E0623B7FCC7506CF4826 /* YLBDottedLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6715628A37E44F0F28677947AF47D4F9 /* UIView+YLBCreateImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BBA8172000B711E5805D4F3DCBD3E6A /* UIView+YLBCreateImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		678F5C3D34D082929847EEEE07972B37 /* NSString+YLBAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 9289AB84B94D811D7771A3E2534B5224 /* NSString+YLBAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67FE3C2D757304509E7757F72C90DF4B /* YLBImaginaryLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C86290E5E2BE949BA2FA475BC8F878 /* YLBImaginaryLine.m */; };
-		6A083C22D70D71122C8661BB32CE76A9 /* YLBLabelImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 3243CB47D3065462A19F9FDE796083CF /* YLBLabelImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D0E1C5A54C9BC5799F3248ACCEAA5B1 /* YLBFrequeControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DC443E5C5986BECBFD5650607730DFC /* YLBFrequeControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6DE05CA664A84DE88085104DB60A482B /* YLBAnimationDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A0314F0A3CF94594960676BE935844 /* YLBAnimationDelegateManager.m */; };
-		7607620B41D70E629F247163350E988B /* Pods-YLBCommon_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A471BB5A4D72E22ED36C8C6782273 /* Pods-YLBCommon_Tests-dummy.m */; };
+		70D2ADD9BD0E749BE06D7D4CA7EA4309 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22BB58D72A2549AAA366D77C5BEB8DB /* Foundation.framework */; };
 		81D829AF109C3AA0FE294D129C6ED84F /* NSNumber+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAA443F64C02ADC8A8B8A9186F5DB54 /* NSNumber+Formatter.m */; };
 		848B3E43D43FB555ABB15223D2EDF03F /* UIView+YLBCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 5831B3A5771F290FBA060720A7938D2F /* UIView+YLBCorner.m */; };
 		85498A0AB206B703034EF69AAFBBA80B /* YLBCommon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8248622ED51CCFD2969EA66A8AE7C8B6 /* YLBCommon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86B935163118DCBBB86177D16840B36F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22BB58D72A2549AAA366D77C5BEB8DB /* Foundation.framework */; };
+		8AFCD7D03838F0EC2374EE958C0A3B58 /* YLBProUI.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A645069AA23AF234ABD1D45044835D /* YLBProUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D3F2D7094F3D42650FAC0C9BE97C56C /* UIView+YLBShadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0E3D6FFCA152D894B5EC219856CB2 /* UIView+YLBShadow.m */; };
 		8E9D895D1AE48DA3CEDB5F6F8412254E /* UIImage+YLBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 42161CE8E72E55B1F8C684691FE8710B /* UIImage+YLBColor.m */; };
 		91015413F797B9D94172B6BB07C7F2F1 /* YLBUnCopyTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = C1E78AD6C61790079268570903D3C1C3 /* YLBUnCopyTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955BC7159C0C89B2707315F6AE00D960 /* YLBProUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F03ECB137D63FD11C3D2FCCC8948A8 /* YLBProUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96C0EE8388072C90CC37A09EA85A73AD /* YLBBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAB223FD95E0A4EE429B2E30712A1BF /* YLBBundleManager.m */; };
 		99139AE465EFE7FB6B00ABE894149284 /* UIImage+YLBSystemShareToWX.h in Headers */ = {isa = PBXBuildFile; fileRef = DC9225F1382FE13C6705CE43E866E4AD /* UIImage+YLBSystemShareToWX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F9EBDFB72E25A16975280DD2311BEFE /* YLBBundleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 848B561D8AF64B7AA2DF78962A9EB5B3 /* YLBBundleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1368FF0C86F1DE83667364E7FFF70F2 /* YLBCommon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAC554F75465B2A60DBFA7B3E497C9 /* YLBCommon-dummy.m */; };
 		A5D189E6DC6B4CFC2B9EE1114E249B2F /* UIColor+YLBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D6289524B90676617FBB1B9749B324F7 /* UIColor+YLBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A60397DCF2298945DE15026D9536D0DE /* NSString+YLBUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 339A903EE6DA73F94F244ECC6BF7B817 /* NSString+YLBUrl.m */; };
+		ADA156BB00EC5964834EEDE77E33B14A /* YLBDottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A2BDE889567A5EEB0BD3258A2BFE6FAF /* YLBDottedLine.m */; };
 		ADAB692F5DEB6E45734AA9CD589F1EE6 /* UIView+YLBFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = FCF16D8EDB2B1BB7F4EF5EC7CCA09A14 /* UIView+YLBFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF2BEC4190FC3BBAC3C007299DBDD455 /* NSString+YLBVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = EB8BF4199200654104F24AF3672C7416 /* NSString+YLBVersion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B714B2688BE4E9B41074BB773D7CC1A4 /* Pods-YLBCommon_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA36F0F51DE37D8B1DCC97A8D3297FE9 /* Pods-YLBCommon_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B940026EAE7CBD910685B57C14BC0221 /* YLBImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C70079B4638302159E6558EAC8BBE0 /* YLBImageButton.m */; };
 		B9F8008E5863C3E81A5963F5F349A9DE /* YLBCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 6485789E8C6AAC1E2E16D0A687B16166 /* YLBCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB2C65474D1F6A2E5F6842D8B4A4B78A /* YLBTransparentController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3050682419C7C80580B7456E621E0534 /* YLBTransparentController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC8D3ED7E46DE17FE4E8A6E0C3FF9B63 /* UIView+YLBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D27D63B75A727853DCE6C41BFB55001 /* UIView+YLBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCFA00446928E9C462C81230C2BF81AE /* YLBImageButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E8AFE6389D2B73CFF246BFD9683D1C9 /* YLBImageButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BEFD1834E9EB15B74920849C15DAE9EE /* YLBTransparentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D163B31F16CF3F2B07BFAC48E1A0A /* YLBTransparentController.m */; };
 		C2605EB5141C4AF0FF9D6D6FE06D7CCA /* UIColor+YLBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B52AC29ABF42E08D3682FB876DC34D /* UIColor+YLBColor.m */; };
 		C6BF542357BC8209F314494794B143DC /* NSString+YLBSize.h in Headers */ = {isa = PBXBuildFile; fileRef = F59855D16CAC83311099334B08D62E4F /* NSString+YLBSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7A416550600AE03F26C9AD8F43FE948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE448C61CCF629D2B16794BB54760DB4 /* Foundation.framework */; };
 		CCBD16FDEFA32A55BD12067D2B89FECB /* UIImage+YLBColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D17824D210A4707CE8198A6DDA727746 /* UIImage+YLBColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD4BBD983B00DDE115067C8EB232DDF7 /* YLBWhiteController.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DE14E5129CCB7A7715592605851648 /* YLBWhiteController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDE5B47EECE4D9AB7F3EB235BB1A91E6 /* YLBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A91F65B7517A2ED7851FCF52DDAD4C21 /* YLBAlertView.m */; };
 		CFC09937362F557E7A3339F74BD751A7 /* UIView+YLBCreateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F650DBCFCB0DFAAAF5EB57242F7D31E9 /* UIView+YLBCreateImage.m */; };
-		D19DFC422D5B3144255E763F96728201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE448C61CCF629D2B16794BB54760DB4 /* Foundation.framework */; };
-		D7F8555C50D4F2F79B36B2E70F59F01B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE448C61CCF629D2B16794BB54760DB4 /* Foundation.framework */; };
 		D99AF8454D8E2F0416DD5D19E9BF550C /* YLBColorTitleLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 13E07852791BEB157EA491B3B0B78CFC /* YLBColorTitleLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA8CCAC3317921B4831DF80B90302448 /* YLBProUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D4C6358C1214F4B1A7D9F1EFC0CC58 /* YLBProUI-dummy.m */; };
 		E018AF0D01096220C4E28C4303E9ECA2 /* YLBUnCopyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5D9037F156BD5E58F9B9426924189D /* YLBUnCopyTextField.m */; };
-		E36127756C2C78874F8D0422523174A6 /* YLBBaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 319073FBF88425986696D718B2105FE9 /* YLBBaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8C342613F6597C9995C01A9AA679C1D /* NSNumber+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F668F9AA13A5DB25488B92F6DC2EAC68 /* NSNumber+Formatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9E945B31C2E69633DED26025D294858 /* YLBBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8143644CB2A547510EBEE6863E376FD6 /* YLBBaseTableViewController.m */; };
 		EE63B2FBF8468E95EB512188A8681F91 /* UIView+YLBShadow.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DEA4C3B8C1D5EFD124F9DBC99072FD3 /* UIView+YLBShadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F27CA03328768E9FB874BCCEC6866082 /* NSString+YLBVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA9172A2879A40C6E3866C24128528 /* NSString+YLBVersion.m */; };
 		F5B4338461E1D418013142250186965D /* YLBImaginaryLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D3D588E886A39A3D5251AC202AE616 /* YLBImaginaryLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F90F8DAA2D500C23721813D7EFA7F69B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D22BB58D72A2549AAA366D77C5BEB8DB /* Foundation.framework */; };
 		F969EF8D46D78007EC4472FD33B4CDB5 /* YLBWhiteController.m in Sources */ = {isa = PBXBuildFile; fileRef = A934B5B6ED2F52851000D7F0F3587DAE /* YLBWhiteController.m */; };
-		F99430C34F482B3A8AF578B22C91F25F /* YLBImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C70079B4638302159E6558EAC8BBE0 /* YLBImageButton.m */; };
 		FA9090CFFD0417EE66FB2CBF3F058233 /* UIImage+YLBSystemShareToWX.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C879FE1AD52433A1D6E249FA86DDE /* UIImage+YLBSystemShareToWX.m */; };
-		FE18E2154A1D84DC69B73D38AABD0638 /* YLBAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A91F65B7517A2ED7851FCF52DDAD4C21 /* YLBAlertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		06EFA5B08CFEF9FF388D3151ED78E44E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
-			remoteInfo = UMCCommon;
-		};
-		334959407755C274B02D09BA31CC8E44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
-			remoteInfo = UMCCommon;
-		};
-		3AA4D3CFFCBF8758EA58703B65D71201 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D461987E985B4ECEB71D72173B80B6D;
-			remoteInfo = YLBCommon;
-		};
-		54B75EBA1CAE80AAB552DD3E2F45A933 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D461987E985B4ECEB71D72173B80B6D;
-			remoteInfo = YLBCommon;
-		};
-		9905C2DFDE587D86454649F70AAC2BF2 /* PBXContainerItemProxy */ = {
+		286E7ADE1DE732DB21EE288897BBD352 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 08797F46251C64100F721EEF64AAD344;
 			remoteInfo = UMCShare;
 		};
-		CD354802346C850E043F2E7F99761CA8 /* PBXContainerItemProxy */ = {
+		48A530589812B9781D81928614CE0456 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 78832C9BED835583C669D387E3BED22F;
-			remoteInfo = "Pods-YLBCommon_Example";
+			remoteGlobalIDString = 8D461987E985B4ECEB71D72173B80B6D;
+			remoteInfo = YLBCommon;
 		};
-		D8EAB1D0577FE44F8E8270C6EF64C44F /* PBXContainerItemProxy */ = {
+		4E51F2B92BFC56A0932E685AABDA6876 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8B5A2B80B48AC042BFC6FF3A7B7CBC5C;
 			remoteInfo = YLBProUI;
+		};
+		95BD8444CE3087731C4A6BB6F250F211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
+			remoteInfo = UMCCommon;
+		};
+		9DFD0C67BB8ED03F7B73997CA2A93CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D461987E985B4ECEB71D72173B80B6D;
+			remoteInfo = YLBCommon;
+		};
+		BB3B52B037702E456C28321B0B206C98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
+			remoteInfo = UMCCommon;
+		};
+		D0879E0CD36EA71279BDE2F6853D944B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78832C9BED835583C669D387E3BED22F;
+			remoteInfo = "Pods-YLBCommon_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -243,9 +243,9 @@
 		CA5D9037F156BD5E58F9B9426924189D /* YLBUnCopyTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YLBUnCopyTextField.m; sourceTree = "<group>"; };
 		CAF3239A852D31B03DAD5B256DB0C46D /* NSString+YLBUrl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+YLBUrl.h"; sourceTree = "<group>"; };
 		CB251A7EED5D18D08ECED93D89F40BD1 /* Pods_YLBCommon_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YLBCommon_Example.framework; path = "Pods-YLBCommon_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE448C61CCF629D2B16794BB54760DB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF2B7FB2FE86D4E828789C23934E6C53 /* Pods-YLBCommon_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YLBCommon_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D17824D210A4707CE8198A6DDA727746 /* UIImage+YLBColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+YLBColor.h"; sourceTree = "<group>"; };
+		D22BB58D72A2549AAA366D77C5BEB8DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D2681EB47BCA59611DE24FE83EE424C5 /* YLBAnimationDelegateManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YLBAnimationDelegateManager.h; sourceTree = "<group>"; };
 		D59257C8711D73ECC398D6F0076AFA6E /* UIView+YLBCorner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YLBCorner.h"; sourceTree = "<group>"; };
 		D6289524B90676617FBB1B9749B324F7 /* UIColor+YLBColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+YLBColor.h"; sourceTree = "<group>"; };
@@ -272,19 +272,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B30FCAEC9CEE09DFAFC067DA75FFA99 /* Frameworks */ = {
+		9BACE7F3BEDE6B8B7CFE4A572668DFEF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7A416550600AE03F26C9AD8F43FE948 /* Foundation.framework in Frameworks */,
+				70D2ADD9BD0E749BE06D7D4CA7EA4309 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		612F7BD2B0EB2252B158EBB1E84587C4 /* Frameworks */ = {
+		AB10CC033611E2DEF1E379F14ACE1159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D19DFC422D5B3144255E763F96728201 /* Foundation.framework in Frameworks */,
+				324BC169EE3770C227CE2DF02D153831 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,22 +292,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7F8555C50D4F2F79B36B2E70F59F01B /* Foundation.framework in Frameworks */,
+				F90F8DAA2D500C23721813D7EFA7F69B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7E4D37FF9F85D165E96DC8B87A31EE4 /* Frameworks */ = {
+		F532F413532B227D0D7CCE3EB8D14285 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				496EA638E4D2AF5C4B3900EBD30B5FFF /* Foundation.framework in Frameworks */,
-				302349D999FF8B1EFA4DA6AA3E94EFC9 /* YLBCommon.framework in Frameworks */,
+				86B935163118DCBBB86177D16840B36F /* Foundation.framework in Frameworks */,
+				52FDD2B15FFA38DB01070F037F7161B5 /* YLBCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CA0D9B8919ACB6DCD5B315C49B3BEBB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D22BB58D72A2549AAA366D77C5BEB8DB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		1F0876E4D54254FC3C22C54DAECCF23D /* Number */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,14 +494,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		85A46B5017BB307C3D702E897DBCA3F2 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CE448C61CCF629D2B16794BB54760DB4 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		877A510ECC3922E62A4C5216D9F4A5E8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,7 +650,7 @@
 			isa = PBXGroup;
 			children = (
 				57013C322ADBCD08FD4CCC49D2D2F34F /* YLBCommon.framework */,
-				85A46B5017BB307C3D702E897DBCA3F2 /* iOS */,
+				1CA0D9B8919ACB6DCD5B315C49B3BEBB /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -757,25 +757,33 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5011C631197EC6D2846496EB68A8C493 /* Headers */ = {
+		27D1EF85A7C52B10280CF1ABD160F88B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09953642BE92109EA9E5F18B8E06178D /* YLBAlertView.h in Headers */,
-				E36127756C2C78874F8D0422523174A6 /* YLBBaseButton.h in Headers */,
-				5150B55BE4826EE9847E67FDCED1E54F /* YLBDottedLine.h in Headers */,
-				BCFA00446928E9C462C81230C2BF81AE /* YLBImageButton.h in Headers */,
-				6A083C22D70D71122C8661BB32CE76A9 /* YLBLabelImageButton.h in Headers */,
-				2DDFE820FA338A7C05AA59C603AC3544 /* YLBProUI-umbrella.h in Headers */,
-				298EA11259FE370E70B6BF494F8D4EA5 /* YLBProUI.h in Headers */,
+				2966A51D2F884B598E8B2C3F7F84CE83 /* YLBAlertView.h in Headers */,
+				14281CAFDCC9F84F9F843DFA670F631B /* YLBBaseButton.h in Headers */,
+				5D54036877EC4AD9FC7911367C46B0DB /* YLBDottedLine.h in Headers */,
+				4F4A80241D2E4BAA5FDFCC0F7DEF5359 /* YLBImageButton.h in Headers */,
+				3D80C1FF870419727E2987D45D93ECB9 /* YLBLabelImageButton.h in Headers */,
+				955BC7159C0C89B2707315F6AE00D960 /* YLBProUI-umbrella.h in Headers */,
+				8AFCD7D03838F0EC2374EE958C0A3B58 /* YLBProUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		85A76EC82D0E310CA9B6FA34CEC854D6 /* Headers */ = {
+		4F1F308555CA19D7CA7C790DBC87D9A3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ADADD29B3A144D1240BD91F7DDBDCEF /* Pods-YLBCommon_Tests-umbrella.h in Headers */,
+				B714B2688BE4E9B41074BB773D7CC1A4 /* Pods-YLBCommon_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95A3130CB498D658A2C49323F0A207D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE7DA3C878DFCCC5384A5FEB9AB0DA4 /* Pods-YLBCommon_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,33 +820,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E50A088396AFFB16A31341119DD35C99 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47C23C83E40093411271359A306130BE /* Pods-YLBCommon_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		78832C9BED835583C669D387E3BED22F /* Pods-YLBCommon_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B16F5A3FA7E907137133B96EC3586DD8 /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Example" */;
+			buildConfigurationList = 977CF9364DCC0F275A0E3D8B1EF2B518 /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Example" */;
 			buildPhases = (
-				E50A088396AFFB16A31341119DD35C99 /* Headers */,
-				0D567E425807BA79B1AFDE195DDE49B6 /* Sources */,
-				612F7BD2B0EB2252B158EBB1E84587C4 /* Frameworks */,
-				692B65D395B0E016AD0308AAF662F014 /* Resources */,
+				4F1F308555CA19D7CA7C790DBC87D9A3 /* Headers */,
+				1D8E48BF5534403CE143F61A6552BF98 /* Sources */,
+				AB10CC033611E2DEF1E379F14ACE1159 /* Frameworks */,
+				47514D39DDA2ED3E4883F8D95FDC1BE9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				47F4248052986316785DD42B83309EDB /* PBXTargetDependency */,
-				F666D695DA21439FA03E75EAB37C8EB6 /* PBXTargetDependency */,
-				3248EB1C40C2416C37CEC133DFC2D12A /* PBXTargetDependency */,
-				D398BB3CBA30F0AD6EC834BA515362A7 /* PBXTargetDependency */,
+				9590DC8D3DF264B5F66CC9B277F7F4C8 /* PBXTargetDependency */,
+				3DF944B311E642D52888F6F676469CB5 /* PBXTargetDependency */,
+				64B1975C201F532AD924D29DB6C07FC9 /* PBXTargetDependency */,
+				B58987C928123780C2DBCAA5029BF489 /* PBXTargetDependency */,
 			);
 			name = "Pods-YLBCommon_Example";
 			productName = "Pods-YLBCommon_Example";
@@ -847,17 +847,17 @@
 		};
 		8B5A2B80B48AC042BFC6FF3A7B7CBC5C /* YLBProUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A395A85E86C32E5608717FEE791E09D /* Build configuration list for PBXNativeTarget "YLBProUI" */;
+			buildConfigurationList = 0437A9234EB653C21CE86D7D0331E371 /* Build configuration list for PBXNativeTarget "YLBProUI" */;
 			buildPhases = (
-				5011C631197EC6D2846496EB68A8C493 /* Headers */,
-				DE7560E413705CC6DB362229E41912F3 /* Sources */,
-				C7E4D37FF9F85D165E96DC8B87A31EE4 /* Frameworks */,
-				6C046DE30C642EF334305B8A462DF6F6 /* Resources */,
+				27D1EF85A7C52B10280CF1ABD160F88B /* Headers */,
+				74C71A2414B86647987E9460D18B6BAE /* Sources */,
+				F532F413532B227D0D7CCE3EB8D14285 /* Frameworks */,
+				6D989448728BEFA0AE7A0CC2BA8F06BB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C2B74B04B6213110728FADEB590D3C48 /* PBXTargetDependency */,
+				DE6E873C3F1FD94B1D29C72A749F35DD /* PBXTargetDependency */,
 			);
 			name = YLBProUI;
 			productName = YLBProUI;
@@ -884,17 +884,17 @@
 		};
 		F0B9236FA5792C687845CAAD119BDFB0 /* Pods-YLBCommon_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7268F07DAD61DDEE04371907FEABCEAE /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Tests" */;
+			buildConfigurationList = 3B720865ACA2D5DBFB06CBD47945F75A /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Tests" */;
 			buildPhases = (
-				85A76EC82D0E310CA9B6FA34CEC854D6 /* Headers */,
-				4514D7DA2C5C7BEA9A1C46BC473A6234 /* Sources */,
-				2B30FCAEC9CEE09DFAFC067DA75FFA99 /* Frameworks */,
-				8B8DECE5CB2C869834EBDD4E80FD35A5 /* Resources */,
+				95A3130CB498D658A2C49323F0A207D8 /* Headers */,
+				CEB7A0FE25CDF7657D884E74D04860B7 /* Sources */,
+				9BACE7F3BEDE6B8B7CFE4A572668DFEF /* Frameworks */,
+				42E524B357DC517D1C00A8F88B24EC96 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C32621AB1DF51C5509C05CF989E54AE5 /* PBXTargetDependency */,
+				EAC3752568CE3EFA50C1095FF3505636 /* PBXTargetDependency */,
 			);
 			name = "Pods-YLBCommon_Tests";
 			productName = "Pods-YLBCommon_Tests";
@@ -941,21 +941,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		692B65D395B0E016AD0308AAF662F014 /* Resources */ = {
+		42E524B357DC517D1C00A8F88B24EC96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C046DE30C642EF334305B8A462DF6F6 /* Resources */ = {
+		47514D39DDA2ED3E4883F8D95FDC1BE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B8DECE5CB2C869834EBDD4E80FD35A5 /* Resources */ = {
+		6D989448728BEFA0AE7A0CC2BA8F06BB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -996,89 +996,100 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0D567E425807BA79B1AFDE195DDE49B6 /* Sources */ = {
+		1D8E48BF5534403CE143F61A6552BF98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E7477C7A9DC45315BA8D9F7D2D5B11A /* Pods-YLBCommon_Example-dummy.m in Sources */,
+				057CA6494266694FE6D61637C1A940BF /* Pods-YLBCommon_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4514D7DA2C5C7BEA9A1C46BC473A6234 /* Sources */ = {
+		74C71A2414B86647987E9460D18B6BAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7607620B41D70E629F247163350E988B /* Pods-YLBCommon_Tests-dummy.m in Sources */,
+				CDE5B47EECE4D9AB7F3EB235BB1A91E6 /* YLBAlertView.m in Sources */,
+				41BF293353142837DC3AEC586E3E4A29 /* YLBBaseButton.m in Sources */,
+				ADA156BB00EC5964834EEDE77E33B14A /* YLBDottedLine.m in Sources */,
+				B940026EAE7CBD910685B57C14BC0221 /* YLBImageButton.m in Sources */,
+				11B8F8A51A7C4A065C83FB7E5497E906 /* YLBLabelImageButton.m in Sources */,
+				DA8CCAC3317921B4831DF80B90302448 /* YLBProUI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE7560E413705CC6DB362229E41912F3 /* Sources */ = {
+		CEB7A0FE25CDF7657D884E74D04860B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE18E2154A1D84DC69B73D38AABD0638 /* YLBAlertView.m in Sources */,
-				58C7B395AAEE414DAD88AC08C27F09FB /* YLBBaseButton.m in Sources */,
-				263A8038090AE8050D54313F6A0EB9C0 /* YLBDottedLine.m in Sources */,
-				F99430C34F482B3A8AF578B22C91F25F /* YLBImageButton.m in Sources */,
-				6081F82C072E0712C90B4882458094A2 /* YLBLabelImageButton.m in Sources */,
-				4325B1440CD864B046583E8C120BA08C /* YLBProUI-dummy.m in Sources */,
+				2AA53A43787ABA490E34476578C7AB26 /* Pods-YLBCommon_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3248EB1C40C2416C37CEC133DFC2D12A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YLBCommon;
-			target = 8D461987E985B4ECEB71D72173B80B6D /* YLBCommon */;
-			targetProxy = 3AA4D3CFFCBF8758EA58703B65D71201 /* PBXContainerItemProxy */;
-		};
-		47F4248052986316785DD42B83309EDB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
-			targetProxy = 334959407755C274B02D09BA31CC8E44 /* PBXContainerItemProxy */;
-		};
-		C2B74B04B6213110728FADEB590D3C48 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YLBCommon;
-			target = 8D461987E985B4ECEB71D72173B80B6D /* YLBCommon */;
-			targetProxy = 54B75EBA1CAE80AAB552DD3E2F45A933 /* PBXContainerItemProxy */;
-		};
-		C32621AB1DF51C5509C05CF989E54AE5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-YLBCommon_Example";
-			target = 78832C9BED835583C669D387E3BED22F /* Pods-YLBCommon_Example */;
-			targetProxy = CD354802346C850E043F2E7F99761CA8 /* PBXContainerItemProxy */;
-		};
-		D398BB3CBA30F0AD6EC834BA515362A7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YLBProUI;
-			target = 8B5A2B80B48AC042BFC6FF3A7B7CBC5C /* YLBProUI */;
-			targetProxy = D8EAB1D0577FE44F8E8270C6EF64C44F /* PBXContainerItemProxy */;
-		};
-		DD5941773CD99F0A6AF95F1F5334F71F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
-			targetProxy = 06EFA5B08CFEF9FF388D3151ED78E44E /* PBXContainerItemProxy */;
-		};
-		F666D695DA21439FA03E75EAB37C8EB6 /* PBXTargetDependency */ = {
+		3DF944B311E642D52888F6F676469CB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = UMCShare;
 			target = 08797F46251C64100F721EEF64AAD344 /* UMCShare */;
-			targetProxy = 9905C2DFDE587D86454649F70AAC2BF2 /* PBXContainerItemProxy */;
+			targetProxy = 286E7ADE1DE732DB21EE288897BBD352 /* PBXContainerItemProxy */;
+		};
+		64B1975C201F532AD924D29DB6C07FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLBCommon;
+			target = 8D461987E985B4ECEB71D72173B80B6D /* YLBCommon */;
+			targetProxy = 48A530589812B9781D81928614CE0456 /* PBXContainerItemProxy */;
+		};
+		90CB281AF3089EA88ACD0AA56EDA7951 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCCommon;
+			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
+			targetProxy = 95BD8444CE3087731C4A6BB6F250F211 /* PBXContainerItemProxy */;
+		};
+		9590DC8D3DF264B5F66CC9B277F7F4C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UMCCommon;
+			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
+			targetProxy = BB3B52B037702E456C28321B0B206C98 /* PBXContainerItemProxy */;
+		};
+		B58987C928123780C2DBCAA5029BF489 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLBProUI;
+			target = 8B5A2B80B48AC042BFC6FF3A7B7CBC5C /* YLBProUI */;
+			targetProxy = 4E51F2B92BFC56A0932E685AABDA6876 /* PBXContainerItemProxy */;
+		};
+		DE6E873C3F1FD94B1D29C72A749F35DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YLBCommon;
+			target = 8D461987E985B4ECEB71D72173B80B6D /* YLBCommon */;
+			targetProxy = 9DFD0C67BB8ED03F7B73997CA2A93CDC /* PBXContainerItemProxy */;
+		};
+		EAC3752568CE3EFA50C1095FF3505636 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YLBCommon_Example";
+			target = 78832C9BED835583C669D387E3BED22F /* Pods-YLBCommon_Example */;
+			targetProxy = D0879E0CD36EA71279BDE2F6853D944B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		29847A69C416124E45640F04D46F6F60 /* Debug */ = {
+		2DEE96E9FA4CFB0D14D6B58D5F09ACA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B7409E05040347A547CE22C9363A035 /* Pods-YLBCommon_Tests.debug.xcconfig */;
+			baseConfigurationReference = 9E5F0DC086B9D8DA5F8F752334C4FEED /* UMCShare.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DC39751257EB0B36C1D25E3202ADB7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CADBF19D6C996AD947A3A3155423E47 /* YLBCommon.release.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1087,44 +1098,31 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YLBCommon/YLBCommon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLBCommon/YLBCommon-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/YLBCommon/YLBCommon.modulemap";
+				PRODUCT_MODULE_NAME = YLBCommon;
+				PRODUCT_NAME = YLBCommon;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		29F291788E0582D250CB749EAE23DAC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E5F0DC086B9D8DA5F8F752334C4FEED /* UMCShare.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3A3652D8121B9E84214CA584FD5DD275 /* Release */ = {
+		63C1377A97C253BB85AE8A47114853D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8E5593064BD41ED72773A97F8FB6D965 /* UMCShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				SDKROOT = iphoneos;
@@ -1133,24 +1131,11 @@
 			};
 			name = Release;
 		};
-		48530AD7A526D8262A15B7A3D6F9D07A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE1383DB04DA78ACD751885C7501AA0F /* UMCCommon.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1173,6 +1158,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1207,12 +1193,10 @@
 			};
 			name = Release;
 		};
-		67F71446E2DCBC6CBE88AE8DA9FEB14F /* Debug */ = {
+		6EB41CE9B836C6D4FE248E9DDA14C9B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A957C06F3D714AC8BB234AAF38B8718 /* Pods-YLBCommon_Example.debug.xcconfig */;
+			baseConfigurationReference = 480E046F5514EE0409B8D53E9B9084E4 /* YLBCommon.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1221,31 +1205,60 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YLBCommon_Example/Pods-YLBCommon_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YLBCommon/YLBCommon-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLBCommon/YLBCommon-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YLBCommon_Example/Pods-YLBCommon_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/YLBCommon/YLBCommon.modulemap";
+				PRODUCT_MODULE_NAME = YLBCommon;
+				PRODUCT_NAME = YLBCommon;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7C0032A58CD887365EAC7A60B014A70E /* Release */ = {
+		8A38F6E78FD7DC230415445F62723238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C2926D98FAC898FF79F23334AEF285 /* YLBProUI.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YLBProUI/YLBProUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLBProUI/YLBProUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLBProUI/YLBProUI.modulemap";
+				PRODUCT_MODULE_NAME = YLBProUI;
+				PRODUCT_NAME = YLBProUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8FEA0207570A0FC8D7C82C7BF2EFA1F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9F1CCF4FBCA1CCD2C67B65571C897AED /* Pods-YLBCommon_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1274,10 +1287,133 @@
 			};
 			name = Release;
 		};
-		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+		92F56EF6C208C74DAAD28507B34193D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B243ADD060C539E0926961471DD55B3E /* YLBProUI.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YLBProUI/YLBProUI-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YLBProUI/YLBProUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YLBProUI/YLBProUI.modulemap";
+				PRODUCT_MODULE_NAME = YLBProUI;
+				PRODUCT_NAME = YLBProUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A17F94E3CFD87263A236CE5CA1A59BE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF2B7FB2FE86D4E828789C23934E6C53 /* Pods-YLBCommon_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A824FACBD4AD0B71B3488018A0F038DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66773D363635AD08DA985B504F10AD8E /* UMCCommon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BA61C82B5BBF0F353E7B0FBE49C83ED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7409E05040347A547CE22C9363A035 /* Pods-YLBCommon_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CFEBD3145EF163FEB648E48A682BCB1D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE1383DB04DA78ACD751885C7501AA0F /* UMCCommon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1300,6 +1436,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1338,119 +1475,11 @@
 			};
 			name = Debug;
 		};
-		82278FDB772C3178F656C1E30BCC56D0 /* Release */ = {
+		FC4CE254E4752AB57B5ACC2BA1CEAA15 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16C2926D98FAC898FF79F23334AEF285 /* YLBProUI.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLBProUI/YLBProUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLBProUI/YLBProUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLBProUI/YLBProUI.modulemap";
-				PRODUCT_MODULE_NAME = YLBProUI;
-				PRODUCT_NAME = YLBProUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		96D66DB9E0ACED3542724D13DF6A2007 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 480E046F5514EE0409B8D53E9B9084E4 /* YLBCommon.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLBCommon/YLBCommon-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLBCommon/YLBCommon-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLBCommon/YLBCommon.modulemap";
-				PRODUCT_MODULE_NAME = YLBCommon;
-				PRODUCT_NAME = YLBCommon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9FD31209C4ACBFD411501DF073A684CF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66773D363635AD08DA985B504F10AD8E /* UMCCommon.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CD2193AC3624DB53D291782414C2AB06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B243ADD060C539E0926961471DD55B3E /* YLBProUI.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLBProUI/YLBProUI-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLBProUI/YLBProUI-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLBProUI/YLBProUI.modulemap";
-				PRODUCT_MODULE_NAME = YLBProUI;
-				PRODUCT_NAME = YLBProUI;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D2A2A45834C3F81E44DB643655349A6A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF2B7FB2FE86D4E828789C23934E6C53 /* Pods-YLBCommon_Tests.release.xcconfig */;
+			baseConfigurationReference = 5A957C06F3D714AC8BB234AAF38B8718 /* Pods-YLBCommon_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1459,12 +1488,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-YLBCommon_Example/Pods-YLBCommon_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YLBCommon_Tests/Pods-YLBCommon_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-YLBCommon_Example/Pods-YLBCommon_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1473,61 +1502,37 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
-		};
-		F5074391AE6ABB7F3B331FA31DF43AD2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CADBF19D6C996AD947A3A3155423E47 /* YLBCommon.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YLBCommon/YLBCommon-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YLBCommon/YLBCommon-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YLBCommon/YLBCommon.modulemap";
-				PRODUCT_MODULE_NAME = YLBCommon;
-				PRODUCT_NAME = YLBCommon;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31F14A5376EE60AD49615D240C185034 /* Build configuration list for PBXNativeTarget "YLBCommon" */ = {
+		0437A9234EB653C21CE86D7D0331E371 /* Build configuration list for PBXNativeTarget "YLBProUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96D66DB9E0ACED3542724D13DF6A2007 /* Debug */,
-				F5074391AE6ABB7F3B331FA31DF43AD2 /* Release */,
+				92F56EF6C208C74DAAD28507B34193D3 /* Debug */,
+				8A38F6E78FD7DC230415445F62723238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A395A85E86C32E5608717FEE791E09D /* Build configuration list for PBXNativeTarget "YLBProUI" */ = {
+		31F14A5376EE60AD49615D240C185034 /* Build configuration list for PBXNativeTarget "YLBCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CD2193AC3624DB53D291782414C2AB06 /* Debug */,
-				82278FDB772C3178F656C1E30BCC56D0 /* Release */,
+				6EB41CE9B836C6D4FE248E9DDA14C9B6 /* Debug */,
+				5DC39751257EB0B36C1D25E3202ADB7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B720865ACA2D5DBFB06CBD47945F75A /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA61C82B5BBF0F353E7B0FBE49C83ED8 /* Debug */,
+				A17F94E3CFD87263A236CE5CA1A59BE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1535,8 +1540,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
-				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1544,35 +1549,26 @@
 		6BAACFCE6CA478BF9F81725E85D0CACE /* Build configuration list for PBXAggregateTarget "UMCCommon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FD31209C4ACBFD411501DF073A684CF /* Debug */,
-				48530AD7A526D8262A15B7A3D6F9D07A /* Release */,
+				A824FACBD4AD0B71B3488018A0F038DC /* Debug */,
+				CFEBD3145EF163FEB648E48A682BCB1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7268F07DAD61DDEE04371907FEABCEAE /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Tests" */ = {
+		977CF9364DCC0F275A0E3D8B1EF2B518 /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29847A69C416124E45640F04D46F6F60 /* Debug */,
-				D2A2A45834C3F81E44DB643655349A6A /* Release */,
+				FC4CE254E4752AB57B5ACC2BA1CEAA15 /* Debug */,
+				8FEA0207570A0FC8D7C82C7BF2EFA1F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A669382222024943D23AC81401BE4737 /* Build configuration list for PBXAggregateTarget "UMCShare" */ = {
+		DEAC373AC5CBC11625940454AF9693DA /* Build configuration list for PBXAggregateTarget "UMCShare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				29F291788E0582D250CB749EAE23DAC3 /* Debug */,
-				3A3652D8121B9E84214CA584FD5DD275 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B16F5A3FA7E907137133B96EC3586DD8 /* Build configuration list for PBXNativeTarget "Pods-YLBCommon_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				67F71446E2DCBC6CBE88AE8DA9FEB14F /* Debug */,
-				7C0032A58CD887365EAC7A60B014A70E /* Release */,
+				2DEE96E9FA4CFB0D14D6B58D5F09ACA5 /* Debug */,
+				63C1377A97C253BB85AE8A47114853D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
