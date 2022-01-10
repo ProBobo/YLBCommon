@@ -21,6 +21,7 @@
 #import "YLBBundleManager.h"
 #import "NSNumber+Formatter.h"
 #import "UIScrollView+YLBAdjustment.h"
+#import "NSString+General.h"
 #import "NSString+YLBAttribute.h"
 #import "NSString+YLBSize.h"
 #import "NSString+YLBUrl.h"
