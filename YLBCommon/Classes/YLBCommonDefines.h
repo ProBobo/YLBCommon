@@ -34,7 +34,27 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 #pragma mark - 导航栏高度
 
 // 状态栏高度
-#define YLBStatusBarHeight UIApplication.sharedApplication.statusBarFrame.size.height
+//#define YLBStatusBarHeight UIApplication.sharedApplication.statusBarFrame.size.height
+#define YLBStatusBarHeight \
+({\
+float statusBarHeight = 0;\
+if (@available(iOS 13.0, *)) {\
+    if (@available(iOS 15.0, *)) {\
+        NSSet *set = [[UIApplication sharedApplication] connectedScenes];\
+        UIWindowScene *windowScene = [set anyObject];\
+        UIStatusBarManager *statusBarManager =  windowScene.statusBarManager;\
+        statusBarHeight = statusBarManager.statusBarFrame.size.height;\
+    }\
+    else {\
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].windows.firstObject.windowScene.statusBarManager;\
+        statusBarHeight = statusBarManager.statusBarFrame.size.height;\
+    }\
+}\
+else {\
+    statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;\
+}\
+statusBarHeight;\
+})
 // 导航栏高度
 #define YLBNavigationBarHeight 44
 // 底部栏高度
